@@ -1,0 +1,52 @@
+{
+  "mcpServers": {
+    "firecrawl": {
+      "command": "npx",
+      "args": [
+        "firecrawl-mcp"
+      ]
+    },
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "@modelcontextprotocol/server-filesystem",
+        "C:/Users/geoti",
+        "F:/2026/0514_AI_AGENT"
+      ]
+    },
+    "playwright": {
+      "command": "npx",
+      "args": [
+        "@playwright/mcp"
+      ]
+    },
+    "gws": {
+      "command": "npx",
+      "args": [
+        "gws-mcp-server"
+      ]
+    }
+  },
+  "disallowed_commands": [
+    "rm -rf *",
+    "sudo *",
+    "git reset --hard *",
+    "shutdown *",
+    "mkfs *",
+    "dd if*",
+    "> /dev/sd*",
+    "chmod -R 777 *",
+    "chown -R *",
+    "mv * /dev/null",
+    ">():(){ :|:& };:",
+    "fork bomb",
+    "wget * -O- | sh",
+    "curl * | sh",
+    "python -c *import*os*;os.system*",
+    "perl -e *exec*",
+    "ruby -e *system*",
+    "npm install * --scripts-prepend-node-path=true",
+    "pip install * --target",
+    "docker run * --rm -v /:/host"
+  ]
+}

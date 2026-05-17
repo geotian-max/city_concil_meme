@@ -1,0 +1,17 @@
+=== Taipei City Council Departmental Meeting Summary ===
+Date: Wed May 13 00:00:00     2026
+Fetching meeting information for 2026-05-13...
+
+Attempting to fetch today's schedule...
+Source: https://www.tcc.gov.tw/DaySchedule.aspx?n=13516
+
+Trying to get schedule information...
+--
+
+Schedule fetch attempted at Wed May 13 00:00:00     2026
+Note: Due to website restrictions, detailed content may require manual checking.
+Please visit: https://live.tcc.gov.tw/ for live departmental meetings
+Or check: https://www.tcc.gov.tw/DaySchedule.aspx?n=13516 for today's agenda
+
+=== End of Summary ===
+Summary saved to: /F/2026/0514_AI_AGENT/council_summaries/taipei_council_summary_2026-05-13.txt

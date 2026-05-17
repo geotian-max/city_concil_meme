@@ -1,0 +1,20 @@
+﻿# Large binaries
+ffmpeg.exe
+ffprobe.exe
+VSCodeUserSetup-x64-*.exe
+*.part
+# Temporary files
+temp_*
+*.webm.part
+# Node modules
+node_modules/
+# Virtual env
+venv/
+# Logs
+logs/
+# IDE
+.vscode/
+.idea/
+# OS
+.DS_Store
+Thumbs.db

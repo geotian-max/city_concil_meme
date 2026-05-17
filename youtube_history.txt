@@ -1,0 +1,19 @@
+# YouTube URL History for Taipei City Council Meetings
+# Format: DATE DEPARTMENT URL
+# Sorted by date then department, duplicates removed
+# Entries added automatically by script
+2013-09-15 未知部門 http://www.youtube.com/watch?v=oRP3aoGpgok
+2013-09-17 未知部門 http://www.youtube.com/watch?v=Coy8Hoa1DNw
+2013-09-18 未知部門 http://www.youtube.com/watch?v=wp6W61woRE0
+2015-04-16 未知部門 https://www.youtube.com/watch?v=OCHuqaMkT2c&list=PL7gGj5C62VK6svCfMsWrXYWVilWgwCu2q
+2017-11-12 未知部門 https://www.youtube.com/watch?v=To9C773T75Q
+2019-02-03 未知部門 https://www.youtube.com/watch?v=MZYyAxQ9yhk
+2020-08-01 未知部門 https://www.youtube.com/watch?v=uOQpF89-WZk
+2020-08-01 未知部門 https://www.youtube.com/watch?v=6XP7mrwXaSA
+2020-08-07 未知部門 https://www.youtube.com/watch?v=kNuxqC_uxpg&feature=youtu.be
+2020-09-20 未知部門 https://www.youtube.com/watch?v=Lsw5x2VoIVY
+2020-09-24 未知部門 https://www.youtube.com/watch?v=3kz_ntNz8ys
+2021-01-07 未知部門 https://youtu.be/isQo9e_oTBw?t=1670
+2022-02-22 未知部門 https://www.youtube.com/watch?v=STqfJyVpES8
+2022-03-06 未知部門 https://www.youtube.com/watch?v=zEuLV--gGIk
+2022-09-01 台北市議會 https://www.youtube.com/watch?v=Kxn18eqAZvM

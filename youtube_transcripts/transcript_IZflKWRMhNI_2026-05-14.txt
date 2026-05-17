@@ -1,0 +1,283 @@
+So everything you're watching right now
+was generated with a text prompt.
+There's no After Effects, no timeline,
+and no key framing. So today I'm just
+going to show you how to set it up, use
+it, and create your own motion graphics
+with simple text prompts. So first off,
+you are going to need at least a pro
+subscription in Claude. And you're going
+to have to download the desktop app. And
+you can do that by just going to the
+website and downloading the Mac or the
+Windows option. Then once you've got it
+downloaded, you're going to click on the
+code here. And it's going to come up
+with this screen. And you're going to
+have to choose a folder location where
+you want to save everything that you're
+about to make. So I've just saved it in
+one of my YouTube stock folders. And
+then we're going to go to the GitHub,
+which I've put in the description below.
+Copy the URL and paste it into Claude.
+Just make sure you're on Opus 4.6 when
+you do this as well. Then you're just
+going to type install this Claude skill.
+We're going to be rebuilding Remotion
+videos here. And can you please build me
+an example? And this is just to test
+that it's working and making sure that
+when it gives you the example, it's
+something that you could actually use.
+And then it's going to ask you a lot of
+times if you want to allow things that
+are happening. So just click always
+allow for project and just keep pressing
+enter when it's going through these
+steps. Okay. And once that's done, it's
+going to open up a local host and then
+show you the video file that it's
+created. The first one is going to be
+very simple cuz it's basically just
+showing you what it can actually do. And
+now that you know that the remotion is
+working, you can start creating your
+first animation video. So for an
+example, I'm just going to use Apple
+because they have a lot of nice and easy
+to grab products out there. So, I'm just
+going to type in I want a motion video
+graphics, a motion graphics video
+showcase where each one of our products
+comes into frame one at a time
+surrounded by high-end motion graphics.
+I'm very tired, so my prompt is not the
+best. But, let's see what it can
+actually do with something very simple
+and very vague like this. Now, it might
+ask you if you want to download the
+Chrome extension. You can do it with or
+without. It just goes about it a
+different way. So, it's completely up to
+you. And then it'll come up with a plan
+and tell you what it's actually thinking
+of designing for this. So, if you're
+happy with the plan, you can just
+approve it. So, what it's done is not
+the worst. I mean, some of the motion
+graphics are actually pretty cool, but
+what we would want to do now is we
+obviously wouldn't want to just use
+these icons. So, we'd want an actual
+iPhone. We'd want a MacBook. We'd want a
+proper iPad and a watch. And I think
+we'd want more of a gradient style
+background in the background. So, let's
+get those assets together and hop back
+into Claude now. Okay. So, the good
+thing about this is it can actually
+access files on your computer now. So,
+I'm going to get the transparent PGs and
+rename them to what it told me to rename
+them. And then when they're up in the
+folder that it suggested, I will just
+come back and tell it that the images
+are now ready. So I'm going to create a
+1080x 1080 project in Canva and just
+drop all my images that I want to use in
+there. Just change the background to
+black just so I can see that the
+background remover has worked. Now you
+can do this in anything. You can do it
+in Photoshop or whatever else other
+image editor you use. I just use Canva
+cuz the background remover is pretty
+decent. So once I've got all the images
+in the folder and I've given them the
+correct names like it suggested, I'm
+just going to say all images are in the
+folder, please add a
+please add a radial gradient background
+to the entire thing as well. Now this is
+much better. I think that happens a bit
+too fast, but I could obviously give it
+more instructions and change that up if
+I wanted to. But for the purpose of this
+video, I'm just going to move along now
+because I think that is a really good
+example of something you could do. And
+then to render it, you just come over
+here to render, choose what codec you
+wanted, and there you go. It's rendered
+you a HD motion graphic that you can
+bring into Da Vinci Resolve and then add
+all of your sound effects, your music,
+and whatever you wanted just to make
+this better. Okay, so let's test out
+another example. So I work a lot with
+people who are promoting social media
+businesses. So, so I've copied an image
+here from the internet just to show what
+the Instagram insize screen looks like.
+Now, I'm going to say I want a motion
+graphics video showing accounts reach
+going from 0 to 48,600. The circle and
+the followers and the non-followers
+number grow while it plays. I also just
+added that the lines underneath as well
+are going to grow and then just see what
+it comes up with just so I can have a
+nice animated motion graphic of
+Instagram insights. Well, sometimes it
+might give you something that looks
+absolutely like this. So, you just need
+to give it a bit of a kick up the
+backside. And all I said was I sent the
+image again and I said this looks
+nothing like the image I sent you. I
+wanted it to look like that exactly.
+Then obviously it gives it another go
+and it comes back with this. And while
+it still might need a little bit of
+tweaking, I think this is fantastic cuz
+it would have taken me probably 2 3
+hours in After Effects to do. The next
+use case we're going to do is adding
+subtitles to our videos. So I'm just
+going to copy my video file that I want
+to add subtitles to into the public
+stock folder that it asked me to upload
+my assets to. And then I'm going to have
+this video open in Da Vinci Resolve and
+just go over to timeline AI tools create
+subtitles from audio. And once I've got
+my subtitles done, just rightclick
+export subtitle. Go back to that public
+folder and just give it the same kind of
+name dams subtitles. And then I'm going
+to come back into Claude and say and
+then in Claude I've already asked it if
+it can create some animated subtitles
+for me. And then I'm just going to say I
+have put the video and subtitle
+in the public folder. And it's asking me
+to paste the transcript. So I can just
+paste the transcript as well. That's
+fine. I have the video and SRT file.
+Perfect. The only thing you're going to
+want to make sure is if you do do this,
+you're going to obviously want to check
+your subtitle spelling before you export
+it because Da Vinci most likely has got
+a couple of spelling errors in there and
+you won't be able to edit them in this
+final output. Flip it to Jippeting. And
+now we've got the output. So, it's
+exported the output to the out folder,
+and I've just dragged this into Da Vinci
+Resolve. So, let's play and see how the
+subtitles look.
+>> I saw a clinician yesterday who might be
+just like you. She knows how to do the
+procedures. She's great with patients.
+She doesn't have a thriving clinic yet
+for one reason,
+>> and that has worked amazingly. So, what
+if we wanted a different style? Then we
+just go back into Claude. So, I'm just
+trying a bit of a different style and
+make it more Instagram style with, you
+know, different sized words and a
+background border and see how that
+looks. I saw a clinician yesterday who
+might be just like you. She knows
+[music] how to do the procedures. She's
+great with patients. She doesn't have a
+thriving clinic yet for one reason. So,
+it came back with a really interesting
+idea. Obviously, I'd want to move the
+subtitles down. So, I'd tell it that.
+And I think it happens a little bit too
+harshly, but this is genuinely amazing
+because whatever you can think of, you
+can prompt it and it will come up with
+new subtitle ideas for you to be unique
+and not copying Alex Horosi every single
+time. Okay, so another one. We've
+already shown that you can do it with
+the Apple products. But what about
+something that's more of an app or
+courses and things like that? Well,
+we've got the Sweat Factor website here.
+So, I'm just going to paste this in and
+say, "Make a promo for the
+sweatfactor.com website. Use the photos
+and videos that they have, their logo,
+horizontal, same brand, font, and
+colors. CTA is 50% off your first
+month." And let's say I want this to be
+around 30 seconds for a promo. And let's
+see what it comes up with with this one.
+Okay, it finished rendering. It put it
+into my files. Let's have a quick look.
+So, it managed to take the video. It's
+copied the text from the website. It's
+added in the photos of all the different
+styles of training. Put in the trainers.
+It's highlighted them all. It's moving
+around. I mean, this is this is a pretty
+damn good job. There are certain things
+I would like to tweak on it. I'd spend a
+little bit more time on it, but to say
+that this all came out of a text prompt
+is honestly insane. So the last one I'm
+going to show you is just an easy one
+and it's basically what if I wanted
+something with a transparent background.
+So you can't export transparent videos
+from this. It doesn't work. I've tried
+it. But there is a way around it. So
+let's say all I want is a call to
+action. So a bouncy button that
+basically says sign up to the webinar
+below. So let's go to Claude. So I'm
+just making it create a 1080 by350 for
+Instagram ad sizes. A button in the
+bottom third that just bounces in, fades
+in, and says sign up to the webinar
+below. So let's let it create this.
+Okay. Okay. So, I didn't even ask it to
+this time, but it did say it's a
+transparent background, so I can overlay
+it on. So, let's see if it manages to
+fix this. So, I've got the webinar
+button here that it's made. Let's drag
+it over the top. No, it didn't work. It
+still has the black background, but I
+mean, it looks really good. So, we're
+just going to go back into Claude now to
+fix this. So, I'm just going to say
+transparent MP4 doesn't work. Can you
+export me a sequence of transparent PGs
+so I can import it as a sequence in its
+own folder? And once it says it's ready,
+I'm going to come into the media tab in
+Da Vinci Resolve. Then I'm going to find
+where it saved my button to, which is in
+this folder here. Now, if you're seeing
+this as lots of individual images, just
+come to frame display mode and just make
+sure that it's set to sequence instead
+of individual.
+Then I'm just going to drag it into my
+stock folder and go back over to the
+edit page. Then I can just drag the
+button over the top. And there we go.
+We've got a transparent animated PNG.
+Honestly, this is just some of the stuff
+that you can do in Claude. There is so
+many different things that you can try
+and it's honestly amazing that we can do
+all this with text promps. So yeah, I
+hope this helped and I hope you enjoy.
