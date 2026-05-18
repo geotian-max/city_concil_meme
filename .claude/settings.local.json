@@ -153,7 +153,13 @@
       "PowerShell(Set-Content *)",
       "PowerShell(Remove-Item *)",
       "PowerShell(ffprobe *)",
-      "Bash(gh repo *)"
+      "Bash(gh repo *)",
+      "PowerShell(python --version)",
+      "PowerShell(python build_index.py)",
+      "PowerShell(python server.py)",
+      "PowerShell(Invoke-WebRequest -Uri http://127.0.0.1:5000 -UseBasicParsing)",
+      "PowerShell(Invoke-WebRequest -Uri \"http://127.0.0.1:5000/search?q=%E6%88%91%E4%B8%8D%E6%98%AF%E5%8F%B0%E7%8D%A8\" -UseBasicParsing)",
+      "PowerShell(sqlite3 *)"
     ]
   }
 }

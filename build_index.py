@@ -1,7 +1,8 @@
-import sqlite3, os, re, glob
+import sqlite3, os, re, glob, json
 from pathlib import Path
 
-DB_PATH = "data/council.db"
+DB_PATH   = "data/council.db"
+JSON_PATH = "data/index.json"
 TRANS_DIR = "transcripts"  # folder where .vtt files will be placed
 
 def init_db():
@@ -51,8 +52,10 @@ def parse_vtt(vtt_path):
 def main():
     # ensure transcripts directory exists
     os.makedirs(TRANS_DIR, exist_ok=True)
+    os.makedirs(os.path.dirname(JSON_PATH), exist_ok=True)
     conn = init_db()
     cur = conn.cursor()
+    all_records = []  # for JSON export
     for vtt_file in glob.glob(os.path.join(TRANS_DIR, "*.vtt")):
         vid = Path(vtt_file).stem
         entries = parse_vtt(vtt_file)
@@ -61,9 +64,18 @@ def main():
                 "INSERT INTO fts_transcript(vid, start_time, end_time, text) VALUES (?,?,?,?)",
                 (vid, st, et, txt)
             )
+            all_records.append({
+                "vid": vid,
+                "start": st,
+                "end":   et,
+                "text":  txt
+            })
     conn.commit()
     conn.close()
-    print(f"Index built from {len(list(glob.glob(os.path.join(TRANS_DIR, '*.vtt'))))} .vtt files.")
+    # Write JSON
+    with open(JSON_PATH, "w", encoding="utf-8") as f:
+        json.dump(all_records, f, ensure_ascii=False, indent=2)
+    print(f"Index built: {len(all_records)} subtitle entries -> {JSON_PATH}")
 
 if __name__ == "__main__":
     main()
