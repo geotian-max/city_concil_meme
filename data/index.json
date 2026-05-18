@@ -16,5 +16,1805 @@
     "start": 13.2,
     "end": 15.0,
     "text": "這只是一個測試用的字幕檔案。"
+  },
+  {
+    "vid": "5F5SEa7ak2E",
+    "start": 0.0,
+    "end": 3.0,
+    "text": "No transcript available for YouTube video: https://www.youtube.com/watch?v=5F5SEa7ak2E"
+  },
+  {
+    "vid": "5F5SEa7ak2E",
+    "start": 3.0,
+    "end": 6.0,
+    "text": "Reason:"
+  },
+  {
+    "vid": "5F5SEa7ak2E",
+    "start": 6.0,
+    "end": 9.0,
+    "text": "Could not retrieve a transcript for the video https://www.youtube.com/watch?v=5F5SEa7ak2E! This is most likely caused by:"
+  },
+  {
+    "vid": "5F5SEa7ak2E",
+    "start": 9.0,
+    "end": 12.0,
+    "text": "No transcripts were found for any of the requested language codes: ('en',)"
+  },
+  {
+    "vid": "5F5SEa7ak2E",
+    "start": 12.0,
+    "end": 15.0,
+    "text": "For this video (5F5SEa7ak2E) transcripts are available in the following languages:"
+  },
+  {
+    "vid": "5F5SEa7ak2E",
+    "start": 15.0,
+    "end": 18.0,
+    "text": "(MANUALLY CREATED)"
+  },
+  {
+    "vid": "5F5SEa7ak2E",
+    "start": 18.0,
+    "end": 21.0,
+    "text": "- zh-TW (\"Chinese (Taiwan)\")[TRANSLATABLE]"
+  },
+  {
+    "vid": "5F5SEa7ak2E",
+    "start": 21.0,
+    "end": 24.0,
+    "text": "(GENERATED)"
+  },
+  {
+    "vid": "5F5SEa7ak2E",
+    "start": 24.0,
+    "end": 27.0,
+    "text": "None"
+  },
+  {
+    "vid": "5F5SEa7ak2E",
+    "start": 27.0,
+    "end": 30.0,
+    "text": "(TRANSLATION LANGUAGES)"
+  },
+  {
+    "vid": "5F5SEa7ak2E",
+    "start": 30.0,
+    "end": 33.0,
+    "text": "- en (\"English\")"
+  },
+  {
+    "vid": "5F5SEa7ak2E",
+    "start": 33.0,
+    "end": 36.0,
+    "text": "If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 0.0,
+    "end": 3.0,
+    "text": "So everything you're watching right now"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 3.0,
+    "end": 6.0,
+    "text": "was generated with a text prompt."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 6.0,
+    "end": 9.0,
+    "text": "There's no After Effects, no timeline,"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 9.0,
+    "end": 12.0,
+    "text": "and no key framing. So today I'm just"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 12.0,
+    "end": 15.0,
+    "text": "going to show you how to set it up, use"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 15.0,
+    "end": 18.0,
+    "text": "it, and create your own motion graphics"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 18.0,
+    "end": 21.0,
+    "text": "with simple text prompts. So first off,"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 21.0,
+    "end": 24.0,
+    "text": "you are going to need at least a pro"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 24.0,
+    "end": 27.0,
+    "text": "subscription in Claude. And you're going"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 27.0,
+    "end": 30.0,
+    "text": "to have to download the desktop app. And"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 30.0,
+    "end": 33.0,
+    "text": "you can do that by just going to the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 33.0,
+    "end": 36.0,
+    "text": "website and downloading the Mac or the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 36.0,
+    "end": 39.0,
+    "text": "Windows option. Then once you've got it"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 39.0,
+    "end": 42.0,
+    "text": "downloaded, you're going to click on the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 42.0,
+    "end": 45.0,
+    "text": "code here. And it's going to come up"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 45.0,
+    "end": 48.0,
+    "text": "with this screen. And you're going to"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 48.0,
+    "end": 51.0,
+    "text": "have to choose a folder location where"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 51.0,
+    "end": 54.0,
+    "text": "you want to save everything that you're"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 54.0,
+    "end": 57.0,
+    "text": "about to make. So I've just saved it in"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 57.0,
+    "end": 60.0,
+    "text": "one of my YouTube stock folders. And"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 60.0,
+    "end": 63.0,
+    "text": "then we're going to go to the GitHub,"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 63.0,
+    "end": 66.0,
+    "text": "which I've put in the description below."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 66.0,
+    "end": 69.0,
+    "text": "Copy the URL and paste it into Claude."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 69.0,
+    "end": 72.0,
+    "text": "Just make sure you're on Opus 4.6 when"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 72.0,
+    "end": 75.0,
+    "text": "you do this as well. Then you're just"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 75.0,
+    "end": 78.0,
+    "text": "going to type install this Claude skill."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 78.0,
+    "end": 81.0,
+    "text": "We're going to be rebuilding Remotion"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 81.0,
+    "end": 84.0,
+    "text": "videos here. And can you please build me"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 84.0,
+    "end": 87.0,
+    "text": "an example? And this is just to test"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 87.0,
+    "end": 90.0,
+    "text": "that it's working and making sure that"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 90.0,
+    "end": 93.0,
+    "text": "when it gives you the example, it's"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 93.0,
+    "end": 96.0,
+    "text": "something that you could actually use."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 96.0,
+    "end": 99.0,
+    "text": "And then it's going to ask you a lot of"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 99.0,
+    "end": 102.0,
+    "text": "times if you want to allow things that"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 102.0,
+    "end": 105.0,
+    "text": "are happening. So just click always"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 105.0,
+    "end": 108.0,
+    "text": "allow for project and just keep pressing"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 108.0,
+    "end": 111.0,
+    "text": "enter when it's going through these"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 111.0,
+    "end": 114.0,
+    "text": "steps. Okay. And once that's done, it's"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 114.0,
+    "end": 117.0,
+    "text": "going to open up a local host and then"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 117.0,
+    "end": 120.0,
+    "text": "show you the video file that it's"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 120.0,
+    "end": 123.0,
+    "text": "created. The first one is going to be"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 123.0,
+    "end": 126.0,
+    "text": "very simple cuz it's basically just"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 126.0,
+    "end": 129.0,
+    "text": "showing you what it can actually do. And"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 129.0,
+    "end": 132.0,
+    "text": "now that you know that the remotion is"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 132.0,
+    "end": 135.0,
+    "text": "working, you can start creating your"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 135.0,
+    "end": 138.0,
+    "text": "first animation video. So for an"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 138.0,
+    "end": 141.0,
+    "text": "example, I'm just going to use Apple"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 141.0,
+    "end": 144.0,
+    "text": "because they have a lot of nice and easy"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 144.0,
+    "end": 147.0,
+    "text": "to grab products out there. So, I'm just"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 147.0,
+    "end": 150.0,
+    "text": "going to type in I want a motion video"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 150.0,
+    "end": 153.0,
+    "text": "graphics, a motion graphics video"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 153.0,
+    "end": 156.0,
+    "text": "showcase where each one of our products"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 156.0,
+    "end": 159.0,
+    "text": "comes into frame one at a time"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 159.0,
+    "end": 162.0,
+    "text": "surrounded by high-end motion graphics."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 162.0,
+    "end": 165.0,
+    "text": "I'm very tired, so my prompt is not the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 165.0,
+    "end": 168.0,
+    "text": "best. But, let's see what it can"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 168.0,
+    "end": 171.0,
+    "text": "actually do with something very simple"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 171.0,
+    "end": 174.0,
+    "text": "and very vague like this. Now, it might"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 174.0,
+    "end": 177.0,
+    "text": "ask you if you want to download the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 177.0,
+    "end": 180.0,
+    "text": "Chrome extension. You can do it with or"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 180.0,
+    "end": 183.0,
+    "text": "without. It just goes about it a"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 183.0,
+    "end": 186.0,
+    "text": "different way. So, it's completely up to"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 186.0,
+    "end": 189.0,
+    "text": "you. And then it'll come up with a plan"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 189.0,
+    "end": 192.0,
+    "text": "and tell you what it's actually thinking"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 192.0,
+    "end": 195.0,
+    "text": "of designing for this. So, if you're"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 195.0,
+    "end": 198.0,
+    "text": "happy with the plan, you can just"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 198.0,
+    "end": 201.0,
+    "text": "approve it. So, what it's done is not"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 201.0,
+    "end": 204.0,
+    "text": "the worst. I mean, some of the motion"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 204.0,
+    "end": 207.0,
+    "text": "graphics are actually pretty cool, but"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 207.0,
+    "end": 210.0,
+    "text": "what we would want to do now is we"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 210.0,
+    "end": 213.0,
+    "text": "obviously wouldn't want to just use"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 213.0,
+    "end": 216.0,
+    "text": "these icons. So, we'd want an actual"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 216.0,
+    "end": 219.0,
+    "text": "iPhone. We'd want a MacBook. We'd want a"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 219.0,
+    "end": 222.0,
+    "text": "proper iPad and a watch. And I think"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 222.0,
+    "end": 225.0,
+    "text": "we'd want more of a gradient style"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 225.0,
+    "end": 228.0,
+    "text": "background in the background. So, let's"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 228.0,
+    "end": 231.0,
+    "text": "get those assets together and hop back"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 231.0,
+    "end": 234.0,
+    "text": "into Claude now. Okay. So, the good"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 234.0,
+    "end": 237.0,
+    "text": "thing about this is it can actually"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 237.0,
+    "end": 240.0,
+    "text": "access files on your computer now. So,"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 240.0,
+    "end": 243.0,
+    "text": "I'm going to get the transparent PGs and"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 243.0,
+    "end": 246.0,
+    "text": "rename them to what it told me to rename"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 246.0,
+    "end": 249.0,
+    "text": "them. And then when they're up in the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 249.0,
+    "end": 252.0,
+    "text": "folder that it suggested, I will just"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 252.0,
+    "end": 255.0,
+    "text": "come back and tell it that the images"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 255.0,
+    "end": 258.0,
+    "text": "are now ready. So I'm going to create a"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 258.0,
+    "end": 261.0,
+    "text": "1080x 1080 project in Canva and just"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 261.0,
+    "end": 264.0,
+    "text": "drop all my images that I want to use in"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 264.0,
+    "end": 267.0,
+    "text": "there. Just change the background to"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 267.0,
+    "end": 270.0,
+    "text": "black just so I can see that the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 270.0,
+    "end": 273.0,
+    "text": "background remover has worked. Now you"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 273.0,
+    "end": 276.0,
+    "text": "can do this in anything. You can do it"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 276.0,
+    "end": 279.0,
+    "text": "in Photoshop or whatever else other"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 279.0,
+    "end": 282.0,
+    "text": "image editor you use. I just use Canva"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 282.0,
+    "end": 285.0,
+    "text": "cuz the background remover is pretty"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 285.0,
+    "end": 288.0,
+    "text": "decent. So once I've got all the images"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 288.0,
+    "end": 291.0,
+    "text": "in the folder and I've given them the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 291.0,
+    "end": 294.0,
+    "text": "correct names like it suggested, I'm"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 294.0,
+    "end": 297.0,
+    "text": "just going to say all images are in the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 297.0,
+    "end": 300.0,
+    "text": "folder, please add a"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 300.0,
+    "end": 303.0,
+    "text": "please add a radial gradient background"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 303.0,
+    "end": 306.0,
+    "text": "to the entire thing as well. Now this is"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 306.0,
+    "end": 309.0,
+    "text": "much better. I think that happens a bit"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 309.0,
+    "end": 312.0,
+    "text": "too fast, but I could obviously give it"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 312.0,
+    "end": 315.0,
+    "text": "more instructions and change that up if"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 315.0,
+    "end": 318.0,
+    "text": "I wanted to. But for the purpose of this"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 318.0,
+    "end": 321.0,
+    "text": "video, I'm just going to move along now"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 321.0,
+    "end": 324.0,
+    "text": "because I think that is a really good"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 324.0,
+    "end": 327.0,
+    "text": "example of something you could do. And"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 327.0,
+    "end": 330.0,
+    "text": "then to render it, you just come over"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 330.0,
+    "end": 333.0,
+    "text": "here to render, choose what codec you"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 333.0,
+    "end": 336.0,
+    "text": "wanted, and there you go. It's rendered"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 336.0,
+    "end": 339.0,
+    "text": "you a HD motion graphic that you can"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 339.0,
+    "end": 342.0,
+    "text": "bring into Da Vinci Resolve and then add"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 342.0,
+    "end": 345.0,
+    "text": "all of your sound effects, your music,"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 345.0,
+    "end": 348.0,
+    "text": "and whatever you wanted just to make"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 348.0,
+    "end": 351.0,
+    "text": "this better. Okay, so let's test out"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 351.0,
+    "end": 354.0,
+    "text": "another example. So I work a lot with"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 354.0,
+    "end": 357.0,
+    "text": "people who are promoting social media"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 357.0,
+    "end": 360.0,
+    "text": "businesses. So, so I've copied an image"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 360.0,
+    "end": 363.0,
+    "text": "here from the internet just to show what"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 363.0,
+    "end": 366.0,
+    "text": "the Instagram insize screen looks like."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 366.0,
+    "end": 369.0,
+    "text": "Now, I'm going to say I want a motion"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 369.0,
+    "end": 372.0,
+    "text": "graphics video showing accounts reach"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 372.0,
+    "end": 375.0,
+    "text": "going from 0 to 48,600. The circle and"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 375.0,
+    "end": 378.0,
+    "text": "the followers and the non-followers"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 378.0,
+    "end": 381.0,
+    "text": "number grow while it plays. I also just"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 381.0,
+    "end": 384.0,
+    "text": "added that the lines underneath as well"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 384.0,
+    "end": 387.0,
+    "text": "are going to grow and then just see what"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 387.0,
+    "end": 390.0,
+    "text": "it comes up with just so I can have a"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 390.0,
+    "end": 393.0,
+    "text": "nice animated motion graphic of"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 393.0,
+    "end": 396.0,
+    "text": "Instagram insights. Well, sometimes it"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 396.0,
+    "end": 399.0,
+    "text": "might give you something that looks"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 399.0,
+    "end": 402.0,
+    "text": "absolutely like this. So, you just need"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 402.0,
+    "end": 405.0,
+    "text": "to give it a bit of a kick up the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 405.0,
+    "end": 408.0,
+    "text": "backside. And all I said was I sent the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 408.0,
+    "end": 411.0,
+    "text": "image again and I said this looks"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 411.0,
+    "end": 414.0,
+    "text": "nothing like the image I sent you. I"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 414.0,
+    "end": 417.0,
+    "text": "wanted it to look like that exactly."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 417.0,
+    "end": 420.0,
+    "text": "Then obviously it gives it another go"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 420.0,
+    "end": 423.0,
+    "text": "and it comes back with this. And while"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 423.0,
+    "end": 426.0,
+    "text": "it still might need a little bit of"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 426.0,
+    "end": 429.0,
+    "text": "tweaking, I think this is fantastic cuz"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 429.0,
+    "end": 432.0,
+    "text": "it would have taken me probably 2 3"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 432.0,
+    "end": 435.0,
+    "text": "hours in After Effects to do. The next"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 435.0,
+    "end": 438.0,
+    "text": "use case we're going to do is adding"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 438.0,
+    "end": 441.0,
+    "text": "subtitles to our videos. So I'm just"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 441.0,
+    "end": 444.0,
+    "text": "going to copy my video file that I want"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 444.0,
+    "end": 447.0,
+    "text": "to add subtitles to into the public"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 447.0,
+    "end": 450.0,
+    "text": "stock folder that it asked me to upload"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 450.0,
+    "end": 453.0,
+    "text": "my assets to. And then I'm going to have"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 453.0,
+    "end": 456.0,
+    "text": "this video open in Da Vinci Resolve and"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 456.0,
+    "end": 459.0,
+    "text": "just go over to timeline AI tools create"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 459.0,
+    "end": 462.0,
+    "text": "subtitles from audio. And once I've got"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 462.0,
+    "end": 465.0,
+    "text": "my subtitles done, just rightclick"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 465.0,
+    "end": 468.0,
+    "text": "export subtitle. Go back to that public"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 468.0,
+    "end": 471.0,
+    "text": "folder and just give it the same kind of"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 471.0,
+    "end": 474.0,
+    "text": "name dams subtitles. And then I'm going"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 474.0,
+    "end": 477.0,
+    "text": "to come back into Claude and say and"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 477.0,
+    "end": 480.0,
+    "text": "then in Claude I've already asked it if"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 480.0,
+    "end": 483.0,
+    "text": "it can create some animated subtitles"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 483.0,
+    "end": 486.0,
+    "text": "for me. And then I'm just going to say I"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 486.0,
+    "end": 489.0,
+    "text": "have put the video and subtitle"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 489.0,
+    "end": 492.0,
+    "text": "in the public folder. And it's asking me"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 492.0,
+    "end": 495.0,
+    "text": "to paste the transcript. So I can just"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 495.0,
+    "end": 498.0,
+    "text": "paste the transcript as well. That's"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 498.0,
+    "end": 501.0,
+    "text": "fine. I have the video and SRT file."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 501.0,
+    "end": 504.0,
+    "text": "Perfect. The only thing you're going to"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 504.0,
+    "end": 507.0,
+    "text": "want to make sure is if you do do this,"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 507.0,
+    "end": 510.0,
+    "text": "you're going to obviously want to check"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 510.0,
+    "end": 513.0,
+    "text": "your subtitle spelling before you export"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 513.0,
+    "end": 516.0,
+    "text": "it because Da Vinci most likely has got"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 516.0,
+    "end": 519.0,
+    "text": "a couple of spelling errors in there and"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 519.0,
+    "end": 522.0,
+    "text": "you won't be able to edit them in this"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 522.0,
+    "end": 525.0,
+    "text": "final output. Flip it to Jippeting. And"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 525.0,
+    "end": 528.0,
+    "text": "now we've got the output. So, it's"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 528.0,
+    "end": 531.0,
+    "text": "exported the output to the out folder,"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 531.0,
+    "end": 534.0,
+    "text": "and I've just dragged this into Da Vinci"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 534.0,
+    "end": 537.0,
+    "text": "Resolve. So, let's play and see how the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 537.0,
+    "end": 540.0,
+    "text": "subtitles look."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 540.0,
+    "end": 543.0,
+    "text": ">> I saw a clinician yesterday who might be"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 543.0,
+    "end": 546.0,
+    "text": "just like you. She knows how to do the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 546.0,
+    "end": 549.0,
+    "text": "procedures. She's great with patients."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 549.0,
+    "end": 552.0,
+    "text": "She doesn't have a thriving clinic yet"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 552.0,
+    "end": 555.0,
+    "text": "for one reason,"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 555.0,
+    "end": 558.0,
+    "text": ">> and that has worked amazingly. So, what"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 558.0,
+    "end": 561.0,
+    "text": "if we wanted a different style? Then we"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 561.0,
+    "end": 564.0,
+    "text": "just go back into Claude. So, I'm just"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 564.0,
+    "end": 567.0,
+    "text": "trying a bit of a different style and"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 567.0,
+    "end": 570.0,
+    "text": "make it more Instagram style with, you"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 570.0,
+    "end": 573.0,
+    "text": "know, different sized words and a"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 573.0,
+    "end": 576.0,
+    "text": "background border and see how that"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 576.0,
+    "end": 579.0,
+    "text": "looks. I saw a clinician yesterday who"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 579.0,
+    "end": 582.0,
+    "text": "might be just like you. She knows"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 582.0,
+    "end": 585.0,
+    "text": "[music] how to do the procedures. She's"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 585.0,
+    "end": 588.0,
+    "text": "great with patients. She doesn't have a"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 588.0,
+    "end": 591.0,
+    "text": "thriving clinic yet for one reason. So,"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 591.0,
+    "end": 594.0,
+    "text": "it came back with a really interesting"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 594.0,
+    "end": 597.0,
+    "text": "idea. Obviously, I'd want to move the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 597.0,
+    "end": 600.0,
+    "text": "subtitles down. So, I'd tell it that."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 600.0,
+    "end": 603.0,
+    "text": "And I think it happens a little bit too"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 603.0,
+    "end": 606.0,
+    "text": "harshly, but this is genuinely amazing"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 606.0,
+    "end": 609.0,
+    "text": "because whatever you can think of, you"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 609.0,
+    "end": 612.0,
+    "text": "can prompt it and it will come up with"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 612.0,
+    "end": 615.0,
+    "text": "new subtitle ideas for you to be unique"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 615.0,
+    "end": 618.0,
+    "text": "and not copying Alex Horosi every single"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 618.0,
+    "end": 621.0,
+    "text": "time. Okay, so another one. We've"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 621.0,
+    "end": 624.0,
+    "text": "already shown that you can do it with"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 624.0,
+    "end": 627.0,
+    "text": "the Apple products. But what about"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 627.0,
+    "end": 630.0,
+    "text": "something that's more of an app or"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 630.0,
+    "end": 633.0,
+    "text": "courses and things like that? Well,"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 633.0,
+    "end": 636.0,
+    "text": "we've got the Sweat Factor website here."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 636.0,
+    "end": 639.0,
+    "text": "So, I'm just going to paste this in and"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 639.0,
+    "end": 642.0,
+    "text": "say, \"Make a promo for the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 642.0,
+    "end": 645.0,
+    "text": "sweatfactor.com website. Use the photos"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 645.0,
+    "end": 648.0,
+    "text": "and videos that they have, their logo,"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 648.0,
+    "end": 651.0,
+    "text": "horizontal, same brand, font, and"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 651.0,
+    "end": 654.0,
+    "text": "colors. CTA is 50% off your first"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 654.0,
+    "end": 657.0,
+    "text": "month.\" And let's say I want this to be"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 657.0,
+    "end": 660.0,
+    "text": "around 30 seconds for a promo. And let's"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 660.0,
+    "end": 663.0,
+    "text": "see what it comes up with with this one."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 663.0,
+    "end": 666.0,
+    "text": "Okay, it finished rendering. It put it"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 666.0,
+    "end": 669.0,
+    "text": "into my files. Let's have a quick look."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 669.0,
+    "end": 672.0,
+    "text": "So, it managed to take the video. It's"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 672.0,
+    "end": 675.0,
+    "text": "copied the text from the website. It's"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 675.0,
+    "end": 678.0,
+    "text": "added in the photos of all the different"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 678.0,
+    "end": 681.0,
+    "text": "styles of training. Put in the trainers."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 681.0,
+    "end": 684.0,
+    "text": "It's highlighted them all. It's moving"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 684.0,
+    "end": 687.0,
+    "text": "around. I mean, this is this is a pretty"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 687.0,
+    "end": 690.0,
+    "text": "damn good job. There are certain things"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 690.0,
+    "end": 693.0,
+    "text": "I would like to tweak on it. I'd spend a"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 693.0,
+    "end": 696.0,
+    "text": "little bit more time on it, but to say"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 696.0,
+    "end": 699.0,
+    "text": "that this all came out of a text prompt"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 699.0,
+    "end": 702.0,
+    "text": "is honestly insane. So the last one I'm"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 702.0,
+    "end": 705.0,
+    "text": "going to show you is just an easy one"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 705.0,
+    "end": 708.0,
+    "text": "and it's basically what if I wanted"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 708.0,
+    "end": 711.0,
+    "text": "something with a transparent background."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 711.0,
+    "end": 714.0,
+    "text": "So you can't export transparent videos"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 714.0,
+    "end": 717.0,
+    "text": "from this. It doesn't work. I've tried"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 717.0,
+    "end": 720.0,
+    "text": "it. But there is a way around it. So"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 720.0,
+    "end": 723.0,
+    "text": "let's say all I want is a call to"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 723.0,
+    "end": 726.0,
+    "text": "action. So a bouncy button that"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 726.0,
+    "end": 729.0,
+    "text": "basically says sign up to the webinar"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 729.0,
+    "end": 732.0,
+    "text": "below. So let's go to Claude. So I'm"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 732.0,
+    "end": 735.0,
+    "text": "just making it create a 1080 by350 for"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 735.0,
+    "end": 738.0,
+    "text": "Instagram ad sizes. A button in the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 738.0,
+    "end": 741.0,
+    "text": "bottom third that just bounces in, fades"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 741.0,
+    "end": 744.0,
+    "text": "in, and says sign up to the webinar"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 744.0,
+    "end": 747.0,
+    "text": "below. So let's let it create this."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 747.0,
+    "end": 750.0,
+    "text": "Okay. Okay. So, I didn't even ask it to"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 750.0,
+    "end": 753.0,
+    "text": "this time, but it did say it's a"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 753.0,
+    "end": 756.0,
+    "text": "transparent background, so I can overlay"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 756.0,
+    "end": 759.0,
+    "text": "it on. So, let's see if it manages to"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 759.0,
+    "end": 762.0,
+    "text": "fix this. So, I've got the webinar"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 762.0,
+    "end": 765.0,
+    "text": "button here that it's made. Let's drag"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 765.0,
+    "end": 768.0,
+    "text": "it over the top. No, it didn't work. It"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 768.0,
+    "end": 771.0,
+    "text": "still has the black background, but I"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 771.0,
+    "end": 774.0,
+    "text": "mean, it looks really good. So, we're"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 774.0,
+    "end": 777.0,
+    "text": "just going to go back into Claude now to"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 777.0,
+    "end": 780.0,
+    "text": "fix this. So, I'm just going to say"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 780.0,
+    "end": 783.0,
+    "text": "transparent MP4 doesn't work. Can you"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 783.0,
+    "end": 786.0,
+    "text": "export me a sequence of transparent PGs"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 786.0,
+    "end": 789.0,
+    "text": "so I can import it as a sequence in its"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 789.0,
+    "end": 792.0,
+    "text": "own folder? And once it says it's ready,"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 792.0,
+    "end": 795.0,
+    "text": "I'm going to come into the media tab in"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 795.0,
+    "end": 798.0,
+    "text": "Da Vinci Resolve. Then I'm going to find"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 798.0,
+    "end": 801.0,
+    "text": "where it saved my button to, which is in"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 801.0,
+    "end": 804.0,
+    "text": "this folder here. Now, if you're seeing"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 804.0,
+    "end": 807.0,
+    "text": "this as lots of individual images, just"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 807.0,
+    "end": 810.0,
+    "text": "come to frame display mode and just make"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 810.0,
+    "end": 813.0,
+    "text": "sure that it's set to sequence instead"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 813.0,
+    "end": 816.0,
+    "text": "of individual."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 816.0,
+    "end": 819.0,
+    "text": "Then I'm just going to drag it into my"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 819.0,
+    "end": 822.0,
+    "text": "stock folder and go back over to the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 822.0,
+    "end": 825.0,
+    "text": "edit page. Then I can just drag the"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 825.0,
+    "end": 828.0,
+    "text": "button over the top. And there we go."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 828.0,
+    "end": 831.0,
+    "text": "We've got a transparent animated PNG."
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 831.0,
+    "end": 834.0,
+    "text": "Honestly, this is just some of the stuff"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 834.0,
+    "end": 837.0,
+    "text": "that you can do in Claude. There is so"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 837.0,
+    "end": 840.0,
+    "text": "many different things that you can try"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 840.0,
+    "end": 843.0,
+    "text": "and it's honestly amazing that we can do"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 843.0,
+    "end": 846.0,
+    "text": "all this with text promps. So yeah, I"
+  },
+  {
+    "vid": "IZflKWRMhNI",
+    "start": 846.0,
+    "end": 849.0,
+    "text": "hope this helped and I hope you enjoy."
+  },
+  {
+    "vid": "F9oZ-9zY4c8",
+    "start": 0.0,
+    "end": 3.0,
+    "text": "No transcript available for YouTube video: https://www.youtube.com/watch?v=F9oZ-9zY4c8"
+  },
+  {
+    "vid": "F9oZ-9zY4c8",
+    "start": 3.0,
+    "end": 6.0,
+    "text": "Reason:"
+  },
+  {
+    "vid": "F9oZ-9zY4c8",
+    "start": 6.0,
+    "end": 9.0,
+    "text": "Could not retrieve a transcript for the video https://www.youtube.com/watch?v=F9oZ-9zY4c8! This is most likely caused by:"
+  },
+  {
+    "vid": "F9oZ-9zY4c8",
+    "start": 9.0,
+    "end": 12.0,
+    "text": "Subtitles are disabled for this video"
+  },
+  {
+    "vid": "F9oZ-9zY4c8",
+    "start": 12.0,
+    "end": 15.0,
+    "text": "If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!"
   }
 ]

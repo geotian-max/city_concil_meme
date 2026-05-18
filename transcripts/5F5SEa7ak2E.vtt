@@ -1,0 +1,49 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.000
+No transcript available for YouTube video: https://www.youtube.com/watch?v=5F5SEa7ak2E
+
+2
+00:00:03.000 --> 00:00:06.000
+Reason:
+
+3
+00:00:06.000 --> 00:00:09.000
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=5F5SEa7ak2E! This is most likely caused by:
+
+4
+00:00:09.000 --> 00:00:12.000
+No transcripts were found for any of the requested language codes: ('en',)
+
+5
+00:00:12.000 --> 00:00:15.000
+For this video (5F5SEa7ak2E) transcripts are available in the following languages:
+
+6
+00:00:15.000 --> 00:00:18.000
+(MANUALLY CREATED)
+
+7
+00:00:18.000 --> 00:00:21.000
+- zh-TW ("Chinese (Taiwan)")[TRANSLATABLE]
+
+8
+00:00:21.000 --> 00:00:24.000
+(GENERATED)
+
+9
+00:00:24.000 --> 00:00:27.000
+None
+
+10
+00:00:27.000 --> 00:00:30.000
+(TRANSLATION LANGUAGES)
+
+11
+00:00:30.000 --> 00:00:33.000
+- en ("English")
+
+12
+00:00:33.000 --> 00:00:36.000
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!

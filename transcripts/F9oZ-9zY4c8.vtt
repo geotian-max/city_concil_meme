@@ -1,0 +1,21 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.000
+No transcript available for YouTube video: https://www.youtube.com/watch?v=F9oZ-9zY4c8
+
+2
+00:00:03.000 --> 00:00:06.000
+Reason:
+
+3
+00:00:06.000 --> 00:00:09.000
+Could not retrieve a transcript for the video https://www.youtube.com/watch?v=F9oZ-9zY4c8! This is most likely caused by:
+
+4
+00:00:09.000 --> 00:00:12.000
+Subtitles are disabled for this video
+
+5
+00:00:12.000 --> 00:00:15.000
+If you are sure that the described cause is not responsible for this error and that a transcript should be retrievable, please create an issue at https://github.com/jdepoix/youtube-transcript-api/issues. Please add which version of youtube_transcript_api you are using and provide the information needed to replicate the error. Also make sure that there are no open issues which already describe your problem!

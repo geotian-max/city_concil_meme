@@ -1,0 +1,1133 @@
+WEBVTT
+
+1
+00:00:00.000 --> 00:00:03.000
+So everything you're watching right now
+
+2
+00:00:03.000 --> 00:00:06.000
+was generated with a text prompt.
+
+3
+00:00:06.000 --> 00:00:09.000
+There's no After Effects, no timeline,
+
+4
+00:00:09.000 --> 00:00:12.000
+and no key framing. So today I'm just
+
+5
+00:00:12.000 --> 00:00:15.000
+going to show you how to set it up, use
+
+6
+00:00:15.000 --> 00:00:18.000
+it, and create your own motion graphics
+
+7
+00:00:18.000 --> 00:00:21.000
+with simple text prompts. So first off,
+
+8
+00:00:21.000 --> 00:00:24.000
+you are going to need at least a pro
+
+9
+00:00:24.000 --> 00:00:27.000
+subscription in Claude. And you're going
+
+10
+00:00:27.000 --> 00:00:30.000
+to have to download the desktop app. And
+
+11
+00:00:30.000 --> 00:00:33.000
+you can do that by just going to the
+
+12
+00:00:33.000 --> 00:00:36.000
+website and downloading the Mac or the
+
+13
+00:00:36.000 --> 00:00:39.000
+Windows option. Then once you've got it
+
+14
+00:00:39.000 --> 00:00:42.000
+downloaded, you're going to click on the
+
+15
+00:00:42.000 --> 00:00:45.000
+code here. And it's going to come up
+
+16
+00:00:45.000 --> 00:00:48.000
+with this screen. And you're going to
+
+17
+00:00:48.000 --> 00:00:51.000
+have to choose a folder location where
+
+18
+00:00:51.000 --> 00:00:54.000
+you want to save everything that you're
+
+19
+00:00:54.000 --> 00:00:57.000
+about to make. So I've just saved it in
+
+20
+00:00:57.000 --> 00:01:00.000
+one of my YouTube stock folders. And
+
+21
+00:01:00.000 --> 00:01:03.000
+then we're going to go to the GitHub,
+
+22
+00:01:03.000 --> 00:01:06.000
+which I've put in the description below.
+
+23
+00:01:06.000 --> 00:01:09.000
+Copy the URL and paste it into Claude.
+
+24
+00:01:09.000 --> 00:01:12.000
+Just make sure you're on Opus 4.6 when
+
+25
+00:01:12.000 --> 00:01:15.000
+you do this as well. Then you're just
+
+26
+00:01:15.000 --> 00:01:18.000
+going to type install this Claude skill.
+
+27
+00:01:18.000 --> 00:01:21.000
+We're going to be rebuilding Remotion
+
+28
+00:01:21.000 --> 00:01:24.000
+videos here. And can you please build me
+
+29
+00:01:24.000 --> 00:01:27.000
+an example? And this is just to test
+
+30
+00:01:27.000 --> 00:01:30.000
+that it's working and making sure that
+
+31
+00:01:30.000 --> 00:01:33.000
+when it gives you the example, it's
+
+32
+00:01:33.000 --> 00:01:36.000
+something that you could actually use.
+
+33
+00:01:36.000 --> 00:01:39.000
+And then it's going to ask you a lot of
+
+34
+00:01:39.000 --> 00:01:42.000
+times if you want to allow things that
+
+35
+00:01:42.000 --> 00:01:45.000
+are happening. So just click always
+
+36
+00:01:45.000 --> 00:01:48.000
+allow for project and just keep pressing
+
+37
+00:01:48.000 --> 00:01:51.000
+enter when it's going through these
+
+38
+00:01:51.000 --> 00:01:54.000
+steps. Okay. And once that's done, it's
+
+39
+00:01:54.000 --> 00:01:57.000
+going to open up a local host and then
+
+40
+00:01:57.000 --> 00:02:00.000
+show you the video file that it's
+
+41
+00:02:00.000 --> 00:02:03.000
+created. The first one is going to be
+
+42
+00:02:03.000 --> 00:02:06.000
+very simple cuz it's basically just
+
+43
+00:02:06.000 --> 00:02:09.000
+showing you what it can actually do. And
+
+44
+00:02:09.000 --> 00:02:12.000
+now that you know that the remotion is
+
+45
+00:02:12.000 --> 00:02:15.000
+working, you can start creating your
+
+46
+00:02:15.000 --> 00:02:18.000
+first animation video. So for an
+
+47
+00:02:18.000 --> 00:02:21.000
+example, I'm just going to use Apple
+
+48
+00:02:21.000 --> 00:02:24.000
+because they have a lot of nice and easy
+
+49
+00:02:24.000 --> 00:02:27.000
+to grab products out there. So, I'm just
+
+50
+00:02:27.000 --> 00:02:30.000
+going to type in I want a motion video
+
+51
+00:02:30.000 --> 00:02:33.000
+graphics, a motion graphics video
+
+52
+00:02:33.000 --> 00:02:36.000
+showcase where each one of our products
+
+53
+00:02:36.000 --> 00:02:39.000
+comes into frame one at a time
+
+54
+00:02:39.000 --> 00:02:42.000
+surrounded by high-end motion graphics.
+
+55
+00:02:42.000 --> 00:02:45.000
+I'm very tired, so my prompt is not the
+
+56
+00:02:45.000 --> 00:02:48.000
+best. But, let's see what it can
+
+57
+00:02:48.000 --> 00:02:51.000
+actually do with something very simple
+
+58
+00:02:51.000 --> 00:02:54.000
+and very vague like this. Now, it might
+
+59
+00:02:54.000 --> 00:02:57.000
+ask you if you want to download the
+
+60
+00:02:57.000 --> 00:03:00.000
+Chrome extension. You can do it with or
+
+61
+00:03:00.000 --> 00:03:03.000
+without. It just goes about it a
+
+62
+00:03:03.000 --> 00:03:06.000
+different way. So, it's completely up to
+
+63
+00:03:06.000 --> 00:03:09.000
+you. And then it'll come up with a plan
+
+64
+00:03:09.000 --> 00:03:12.000
+and tell you what it's actually thinking
+
+65
+00:03:12.000 --> 00:03:15.000
+of designing for this. So, if you're
+
+66
+00:03:15.000 --> 00:03:18.000
+happy with the plan, you can just
+
+67
+00:03:18.000 --> 00:03:21.000
+approve it. So, what it's done is not
+
+68
+00:03:21.000 --> 00:03:24.000
+the worst. I mean, some of the motion
+
+69
+00:03:24.000 --> 00:03:27.000
+graphics are actually pretty cool, but
+
+70
+00:03:27.000 --> 00:03:30.000
+what we would want to do now is we
+
+71
+00:03:30.000 --> 00:03:33.000
+obviously wouldn't want to just use
+
+72
+00:03:33.000 --> 00:03:36.000
+these icons. So, we'd want an actual
+
+73
+00:03:36.000 --> 00:03:39.000
+iPhone. We'd want a MacBook. We'd want a
+
+74
+00:03:39.000 --> 00:03:42.000
+proper iPad and a watch. And I think
+
+75
+00:03:42.000 --> 00:03:45.000
+we'd want more of a gradient style
+
+76
+00:03:45.000 --> 00:03:48.000
+background in the background. So, let's
+
+77
+00:03:48.000 --> 00:03:51.000
+get those assets together and hop back
+
+78
+00:03:51.000 --> 00:03:54.000
+into Claude now. Okay. So, the good
+
+79
+00:03:54.000 --> 00:03:57.000
+thing about this is it can actually
+
+80
+00:03:57.000 --> 00:04:00.000
+access files on your computer now. So,
+
+81
+00:04:00.000 --> 00:04:03.000
+I'm going to get the transparent PGs and
+
+82
+00:04:03.000 --> 00:04:06.000
+rename them to what it told me to rename
+
+83
+00:04:06.000 --> 00:04:09.000
+them. And then when they're up in the
+
+84
+00:04:09.000 --> 00:04:12.000
+folder that it suggested, I will just
+
+85
+00:04:12.000 --> 00:04:15.000
+come back and tell it that the images
+
+86
+00:04:15.000 --> 00:04:18.000
+are now ready. So I'm going to create a
+
+87
+00:04:18.000 --> 00:04:21.000
+1080x 1080 project in Canva and just
+
+88
+00:04:21.000 --> 00:04:24.000
+drop all my images that I want to use in
+
+89
+00:04:24.000 --> 00:04:27.000
+there. Just change the background to
+
+90
+00:04:27.000 --> 00:04:30.000
+black just so I can see that the
+
+91
+00:04:30.000 --> 00:04:33.000
+background remover has worked. Now you
+
+92
+00:04:33.000 --> 00:04:36.000
+can do this in anything. You can do it
+
+93
+00:04:36.000 --> 00:04:39.000
+in Photoshop or whatever else other
+
+94
+00:04:39.000 --> 00:04:42.000
+image editor you use. I just use Canva
+
+95
+00:04:42.000 --> 00:04:45.000
+cuz the background remover is pretty
+
+96
+00:04:45.000 --> 00:04:48.000
+decent. So once I've got all the images
+
+97
+00:04:48.000 --> 00:04:51.000
+in the folder and I've given them the
+
+98
+00:04:51.000 --> 00:04:54.000
+correct names like it suggested, I'm
+
+99
+00:04:54.000 --> 00:04:57.000
+just going to say all images are in the
+
+100
+00:04:57.000 --> 00:05:00.000
+folder, please add a
+
+101
+00:05:00.000 --> 00:05:03.000
+please add a radial gradient background
+
+102
+00:05:03.000 --> 00:05:06.000
+to the entire thing as well. Now this is
+
+103
+00:05:06.000 --> 00:05:09.000
+much better. I think that happens a bit
+
+104
+00:05:09.000 --> 00:05:12.000
+too fast, but I could obviously give it
+
+105
+00:05:12.000 --> 00:05:15.000
+more instructions and change that up if
+
+106
+00:05:15.000 --> 00:05:18.000
+I wanted to. But for the purpose of this
+
+107
+00:05:18.000 --> 00:05:21.000
+video, I'm just going to move along now
+
+108
+00:05:21.000 --> 00:05:24.000
+because I think that is a really good
+
+109
+00:05:24.000 --> 00:05:27.000
+example of something you could do. And
+
+110
+00:05:27.000 --> 00:05:30.000
+then to render it, you just come over
+
+111
+00:05:30.000 --> 00:05:33.000
+here to render, choose what codec you
+
+112
+00:05:33.000 --> 00:05:36.000
+wanted, and there you go. It's rendered
+
+113
+00:05:36.000 --> 00:05:39.000
+you a HD motion graphic that you can
+
+114
+00:05:39.000 --> 00:05:42.000
+bring into Da Vinci Resolve and then add
+
+115
+00:05:42.000 --> 00:05:45.000
+all of your sound effects, your music,
+
+116
+00:05:45.000 --> 00:05:48.000
+and whatever you wanted just to make
+
+117
+00:05:48.000 --> 00:05:51.000
+this better. Okay, so let's test out
+
+118
+00:05:51.000 --> 00:05:54.000
+another example. So I work a lot with
+
+119
+00:05:54.000 --> 00:05:57.000
+people who are promoting social media
+
+120
+00:05:57.000 --> 00:06:00.000
+businesses. So, so I've copied an image
+
+121
+00:06:00.000 --> 00:06:03.000
+here from the internet just to show what
+
+122
+00:06:03.000 --> 00:06:06.000
+the Instagram insize screen looks like.
+
+123
+00:06:06.000 --> 00:06:09.000
+Now, I'm going to say I want a motion
+
+124
+00:06:09.000 --> 00:06:12.000
+graphics video showing accounts reach
+
+125
+00:06:12.000 --> 00:06:15.000
+going from 0 to 48,600. The circle and
+
+126
+00:06:15.000 --> 00:06:18.000
+the followers and the non-followers
+
+127
+00:06:18.000 --> 00:06:21.000
+number grow while it plays. I also just
+
+128
+00:06:21.000 --> 00:06:24.000
+added that the lines underneath as well
+
+129
+00:06:24.000 --> 00:06:27.000
+are going to grow and then just see what
+
+130
+00:06:27.000 --> 00:06:30.000
+it comes up with just so I can have a
+
+131
+00:06:30.000 --> 00:06:33.000
+nice animated motion graphic of
+
+132
+00:06:33.000 --> 00:06:36.000
+Instagram insights. Well, sometimes it
+
+133
+00:06:36.000 --> 00:06:39.000
+might give you something that looks
+
+134
+00:06:39.000 --> 00:06:42.000
+absolutely like this. So, you just need
+
+135
+00:06:42.000 --> 00:06:45.000
+to give it a bit of a kick up the
+
+136
+00:06:45.000 --> 00:06:48.000
+backside. And all I said was I sent the
+
+137
+00:06:48.000 --> 00:06:51.000
+image again and I said this looks
+
+138
+00:06:51.000 --> 00:06:54.000
+nothing like the image I sent you. I
+
+139
+00:06:54.000 --> 00:06:57.000
+wanted it to look like that exactly.
+
+140
+00:06:57.000 --> 00:07:00.000
+Then obviously it gives it another go
+
+141
+00:07:00.000 --> 00:07:03.000
+and it comes back with this. And while
+
+142
+00:07:03.000 --> 00:07:06.000
+it still might need a little bit of
+
+143
+00:07:06.000 --> 00:07:09.000
+tweaking, I think this is fantastic cuz
+
+144
+00:07:09.000 --> 00:07:12.000
+it would have taken me probably 2 3
+
+145
+00:07:12.000 --> 00:07:15.000
+hours in After Effects to do. The next
+
+146
+00:07:15.000 --> 00:07:18.000
+use case we're going to do is adding
+
+147
+00:07:18.000 --> 00:07:21.000
+subtitles to our videos. So I'm just
+
+148
+00:07:21.000 --> 00:07:24.000
+going to copy my video file that I want
+
+149
+00:07:24.000 --> 00:07:27.000
+to add subtitles to into the public
+
+150
+00:07:27.000 --> 00:07:30.000
+stock folder that it asked me to upload
+
+151
+00:07:30.000 --> 00:07:33.000
+my assets to. And then I'm going to have
+
+152
+00:07:33.000 --> 00:07:36.000
+this video open in Da Vinci Resolve and
+
+153
+00:07:36.000 --> 00:07:39.000
+just go over to timeline AI tools create
+
+154
+00:07:39.000 --> 00:07:42.000
+subtitles from audio. And once I've got
+
+155
+00:07:42.000 --> 00:07:45.000
+my subtitles done, just rightclick
+
+156
+00:07:45.000 --> 00:07:48.000
+export subtitle. Go back to that public
+
+157
+00:07:48.000 --> 00:07:51.000
+folder and just give it the same kind of
+
+158
+00:07:51.000 --> 00:07:54.000
+name dams subtitles. And then I'm going
+
+159
+00:07:54.000 --> 00:07:57.000
+to come back into Claude and say and
+
+160
+00:07:57.000 --> 00:08:00.000
+then in Claude I've already asked it if
+
+161
+00:08:00.000 --> 00:08:03.000
+it can create some animated subtitles
+
+162
+00:08:03.000 --> 00:08:06.000
+for me. And then I'm just going to say I
+
+163
+00:08:06.000 --> 00:08:09.000
+have put the video and subtitle
+
+164
+00:08:09.000 --> 00:08:12.000
+in the public folder. And it's asking me
+
+165
+00:08:12.000 --> 00:08:15.000
+to paste the transcript. So I can just
+
+166
+00:08:15.000 --> 00:08:18.000
+paste the transcript as well. That's
+
+167
+00:08:18.000 --> 00:08:21.000
+fine. I have the video and SRT file.
+
+168
+00:08:21.000 --> 00:08:24.000
+Perfect. The only thing you're going to
+
+169
+00:08:24.000 --> 00:08:27.000
+want to make sure is if you do do this,
+
+170
+00:08:27.000 --> 00:08:30.000
+you're going to obviously want to check
+
+171
+00:08:30.000 --> 00:08:33.000
+your subtitle spelling before you export
+
+172
+00:08:33.000 --> 00:08:36.000
+it because Da Vinci most likely has got
+
+173
+00:08:36.000 --> 00:08:39.000
+a couple of spelling errors in there and
+
+174
+00:08:39.000 --> 00:08:42.000
+you won't be able to edit them in this
+
+175
+00:08:42.000 --> 00:08:45.000
+final output. Flip it to Jippeting. And
+
+176
+00:08:45.000 --> 00:08:48.000
+now we've got the output. So, it's
+
+177
+00:08:48.000 --> 00:08:51.000
+exported the output to the out folder,
+
+178
+00:08:51.000 --> 00:08:54.000
+and I've just dragged this into Da Vinci
+
+179
+00:08:54.000 --> 00:08:57.000
+Resolve. So, let's play and see how the
+
+180
+00:08:57.000 --> 00:09:00.000
+subtitles look.
+
+181
+00:09:00.000 --> 00:09:03.000
+>> I saw a clinician yesterday who might be
+
+182
+00:09:03.000 --> 00:09:06.000
+just like you. She knows how to do the
+
+183
+00:09:06.000 --> 00:09:09.000
+procedures. She's great with patients.
+
+184
+00:09:09.000 --> 00:09:12.000
+She doesn't have a thriving clinic yet
+
+185
+00:09:12.000 --> 00:09:15.000
+for one reason,
+
+186
+00:09:15.000 --> 00:09:18.000
+>> and that has worked amazingly. So, what
+
+187
+00:09:18.000 --> 00:09:21.000
+if we wanted a different style? Then we
+
+188
+00:09:21.000 --> 00:09:24.000
+just go back into Claude. So, I'm just
+
+189
+00:09:24.000 --> 00:09:27.000
+trying a bit of a different style and
+
+190
+00:09:27.000 --> 00:09:30.000
+make it more Instagram style with, you
+
+191
+00:09:30.000 --> 00:09:33.000
+know, different sized words and a
+
+192
+00:09:33.000 --> 00:09:36.000
+background border and see how that
+
+193
+00:09:36.000 --> 00:09:39.000
+looks. I saw a clinician yesterday who
+
+194
+00:09:39.000 --> 00:09:42.000
+might be just like you. She knows
+
+195
+00:09:42.000 --> 00:09:45.000
+[music] how to do the procedures. She's
+
+196
+00:09:45.000 --> 00:09:48.000
+great with patients. She doesn't have a
+
+197
+00:09:48.000 --> 00:09:51.000
+thriving clinic yet for one reason. So,
+
+198
+00:09:51.000 --> 00:09:54.000
+it came back with a really interesting
+
+199
+00:09:54.000 --> 00:09:57.000
+idea. Obviously, I'd want to move the
+
+200
+00:09:57.000 --> 00:10:00.000
+subtitles down. So, I'd tell it that.
+
+201
+00:10:00.000 --> 00:10:03.000
+And I think it happens a little bit too
+
+202
+00:10:03.000 --> 00:10:06.000
+harshly, but this is genuinely amazing
+
+203
+00:10:06.000 --> 00:10:09.000
+because whatever you can think of, you
+
+204
+00:10:09.000 --> 00:10:12.000
+can prompt it and it will come up with
+
+205
+00:10:12.000 --> 00:10:15.000
+new subtitle ideas for you to be unique
+
+206
+00:10:15.000 --> 00:10:18.000
+and not copying Alex Horosi every single
+
+207
+00:10:18.000 --> 00:10:21.000
+time. Okay, so another one. We've
+
+208
+00:10:21.000 --> 00:10:24.000
+already shown that you can do it with
+
+209
+00:10:24.000 --> 00:10:27.000
+the Apple products. But what about
+
+210
+00:10:27.000 --> 00:10:30.000
+something that's more of an app or
+
+211
+00:10:30.000 --> 00:10:33.000
+courses and things like that? Well,
+
+212
+00:10:33.000 --> 00:10:36.000
+we've got the Sweat Factor website here.
+
+213
+00:10:36.000 --> 00:10:39.000
+So, I'm just going to paste this in and
+
+214
+00:10:39.000 --> 00:10:42.000
+say, "Make a promo for the
+
+215
+00:10:42.000 --> 00:10:45.000
+sweatfactor.com website. Use the photos
+
+216
+00:10:45.000 --> 00:10:48.000
+and videos that they have, their logo,
+
+217
+00:10:48.000 --> 00:10:51.000
+horizontal, same brand, font, and
+
+218
+00:10:51.000 --> 00:10:54.000
+colors. CTA is 50% off your first
+
+219
+00:10:54.000 --> 00:10:57.000
+month." And let's say I want this to be
+
+220
+00:10:57.000 --> 00:11:00.000
+around 30 seconds for a promo. And let's
+
+221
+00:11:00.000 --> 00:11:03.000
+see what it comes up with with this one.
+
+222
+00:11:03.000 --> 00:11:06.000
+Okay, it finished rendering. It put it
+
+223
+00:11:06.000 --> 00:11:09.000
+into my files. Let's have a quick look.
+
+224
+00:11:09.000 --> 00:11:12.000
+So, it managed to take the video. It's
+
+225
+00:11:12.000 --> 00:11:15.000
+copied the text from the website. It's
+
+226
+00:11:15.000 --> 00:11:18.000
+added in the photos of all the different
+
+227
+00:11:18.000 --> 00:11:21.000
+styles of training. Put in the trainers.
+
+228
+00:11:21.000 --> 00:11:24.000
+It's highlighted them all. It's moving
+
+229
+00:11:24.000 --> 00:11:27.000
+around. I mean, this is this is a pretty
+
+230
+00:11:27.000 --> 00:11:30.000
+damn good job. There are certain things
+
+231
+00:11:30.000 --> 00:11:33.000
+I would like to tweak on it. I'd spend a
+
+232
+00:11:33.000 --> 00:11:36.000
+little bit more time on it, but to say
+
+233
+00:11:36.000 --> 00:11:39.000
+that this all came out of a text prompt
+
+234
+00:11:39.000 --> 00:11:42.000
+is honestly insane. So the last one I'm
+
+235
+00:11:42.000 --> 00:11:45.000
+going to show you is just an easy one
+
+236
+00:11:45.000 --> 00:11:48.000
+and it's basically what if I wanted
+
+237
+00:11:48.000 --> 00:11:51.000
+something with a transparent background.
+
+238
+00:11:51.000 --> 00:11:54.000
+So you can't export transparent videos
+
+239
+00:11:54.000 --> 00:11:57.000
+from this. It doesn't work. I've tried
+
+240
+00:11:57.000 --> 00:12:00.000
+it. But there is a way around it. So
+
+241
+00:12:00.000 --> 00:12:03.000
+let's say all I want is a call to
+
+242
+00:12:03.000 --> 00:12:06.000
+action. So a bouncy button that
+
+243
+00:12:06.000 --> 00:12:09.000
+basically says sign up to the webinar
+
+244
+00:12:09.000 --> 00:12:12.000
+below. So let's go to Claude. So I'm
+
+245
+00:12:12.000 --> 00:12:15.000
+just making it create a 1080 by350 for
+
+246
+00:12:15.000 --> 00:12:18.000
+Instagram ad sizes. A button in the
+
+247
+00:12:18.000 --> 00:12:21.000
+bottom third that just bounces in, fades
+
+248
+00:12:21.000 --> 00:12:24.000
+in, and says sign up to the webinar
+
+249
+00:12:24.000 --> 00:12:27.000
+below. So let's let it create this.
+
+250
+00:12:27.000 --> 00:12:30.000
+Okay. Okay. So, I didn't even ask it to
+
+251
+00:12:30.000 --> 00:12:33.000
+this time, but it did say it's a
+
+252
+00:12:33.000 --> 00:12:36.000
+transparent background, so I can overlay
+
+253
+00:12:36.000 --> 00:12:39.000
+it on. So, let's see if it manages to
+
+254
+00:12:39.000 --> 00:12:42.000
+fix this. So, I've got the webinar
+
+255
+00:12:42.000 --> 00:12:45.000
+button here that it's made. Let's drag
+
+256
+00:12:45.000 --> 00:12:48.000
+it over the top. No, it didn't work. It
+
+257
+00:12:48.000 --> 00:12:51.000
+still has the black background, but I
+
+258
+00:12:51.000 --> 00:12:54.000
+mean, it looks really good. So, we're
+
+259
+00:12:54.000 --> 00:12:57.000
+just going to go back into Claude now to
+
+260
+00:12:57.000 --> 00:13:00.000
+fix this. So, I'm just going to say
+
+261
+00:13:00.000 --> 00:13:03.000
+transparent MP4 doesn't work. Can you
+
+262
+00:13:03.000 --> 00:13:06.000
+export me a sequence of transparent PGs
+
+263
+00:13:06.000 --> 00:13:09.000
+so I can import it as a sequence in its
+
+264
+00:13:09.000 --> 00:13:12.000
+own folder? And once it says it's ready,
+
+265
+00:13:12.000 --> 00:13:15.000
+I'm going to come into the media tab in
+
+266
+00:13:15.000 --> 00:13:18.000
+Da Vinci Resolve. Then I'm going to find
+
+267
+00:13:18.000 --> 00:13:21.000
+where it saved my button to, which is in
+
+268
+00:13:21.000 --> 00:13:24.000
+this folder here. Now, if you're seeing
+
+269
+00:13:24.000 --> 00:13:27.000
+this as lots of individual images, just
+
+270
+00:13:27.000 --> 00:13:30.000
+come to frame display mode and just make
+
+271
+00:13:30.000 --> 00:13:33.000
+sure that it's set to sequence instead
+
+272
+00:13:33.000 --> 00:13:36.000
+of individual.
+
+273
+00:13:36.000 --> 00:13:39.000
+Then I'm just going to drag it into my
+
+274
+00:13:39.000 --> 00:13:42.000
+stock folder and go back over to the
+
+275
+00:13:42.000 --> 00:13:45.000
+edit page. Then I can just drag the
+
+276
+00:13:45.000 --> 00:13:48.000
+button over the top. And there we go.
+
+277
+00:13:48.000 --> 00:13:51.000
+We've got a transparent animated PNG.
+
+278
+00:13:51.000 --> 00:13:54.000
+Honestly, this is just some of the stuff
+
+279
+00:13:54.000 --> 00:13:57.000
+that you can do in Claude. There is so
+
+280
+00:13:57.000 --> 00:14:00.000
+many different things that you can try
+
+281
+00:14:00.000 --> 00:14:03.000
+and it's honestly amazing that we can do
+
+282
+00:14:03.000 --> 00:14:06.000
+all this with text promps. So yeah, I
+
+283
+00:14:06.000 --> 00:14:09.000
+hope this helped and I hope you enjoy.
