@@ -1,0 +1,20 @@
+[
+  {
+    "vid": "sample",
+    "start": 5.0,
+    "end": 7.0,
+    "text": "大家好，這是測試字幕。"
+  },
+  {
+    "vid": "sample",
+    "start": 8.5,
+    "end": 12.0,
+    "text": "我不是台獨，我是愛 Taiwan 的人民。"
+  },
+  {
+    "vid": "sample",
+    "start": 13.2,
+    "end": 15.0,
+    "text": "這只是一個測試用的字幕檔案。"
+  }
+]
