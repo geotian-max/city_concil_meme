@@ -1,0 +1,73 @@
+name: Update Council Subtitles
+
+on:
+  schedule:
+    # Runs at 13:00 Taipei time (05:00 UTC) on weekdays
+    - cron: '0 5 * * 1-5'
+  workflow_dispatch:  # Allow manual trigger
+
+jobs:
+  update-subtitles:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout gh-pages branch
+      uses: actions/checkout@v4
+      with:
+        ref: gh-pages
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.12'
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install yt-dlp
+
+    - name: Install Deno for JS runtime
+      run: |
+        curl -fsSL https://deno.land/install.sh | sh
+        echo "$HOME/.deno/bin" >> $GITHUB_PATH
+
+    - name: Create transcripts directory
+      run: mkdir -p transcripts
+
+    - name: Download auto-generated subtitles
+      id: download_subs
+      run: |
+        yt-dlp --skip-download --write-auto-sub --sub-lang zh-TW --js-runtimes deno -o "transcripts/%(id)s.%(ext)s" "https://www.youtube.com/watch?v=ENXhEMk0504" || echo "Subtitle download failed - may not be available yet"
+
+    - name: Check if subtitles were downloaded
+      id: check_subs
+      run: |
+        if ls transcripts/*.vtt 1> /dev/null 2>&1; then
+          echo "subtitles_found=true" >> $GITHUB_OUTPUT
+          echo "Found subtitle files:"
+          ls -la transcripts/
+        else
+          echo "subtitles_found=false" >> $GITHUB_OUTPUT
+          echo "No subtitle files found"
+        fi
+      shell: bash
+
+    - name: Build search index
+      if: steps.check_subs.outputs.subtitles_found == 'true'
+      run: |
+        python build_index.py
+
+    - name: Configure git
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+    - name: Commit and push changes
+      if: steps.check_subs.outputs.subtitles_found == 'true'
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git add data/index.json
+        git add transcripts/*.vtt || true
+        git diff --staged --quiet || git commit -m "auto-update: 重建字幕索引 $(date +%Y-%m-%d)"
+        git push origin gh-pages
