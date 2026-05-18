@@ -1,19 +1,707 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW" class="h-full bg-black text-slate-100">
 <head>
-<meta charset="UTF-8">
-<title>台北市議會 Meme 搜尋</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>台北市議會 Meme 影音字句搜尋 (Playphrase 模式)</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;700;900&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Noto Sans TC', sans-serif;
+    }
+    /* 仿 Netflix/Playphrase 電影大字幕陰影，確保在任何底色下都清晰可見 */
+    .cinema-subtitle {
+      text-shadow: 
+        -2px -2px 0 #000,  
+         2px -2px 0 #000,
+        -2px  2px 0 #000,
+         2px  2px 0 #000,
+         0px  3px 6px rgba(0, 0, 0, 0.95),
+         0px  8px 16px rgba(0, 0, 0, 0.5);
+    }
+    /* 隱藏 YouTube 預設控制項的穿透阻擋 */
+    .video-container iframe {
+      pointer-events: none;
+    }
+    /* 自訂精美深色滾動條 */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #090d16;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #1e293b;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #334155;
+    }
+  </style>
 </head>
-<body>
-<h1>台北市議會 Meme 搜尋</h1>
-<input type="text" id="searchBox" placeholder="輸入中文關鍵字（例如：『我不是台獨』」" autocomplete="off" autofocus>
-<div id="results"></div>
+<body class="h-full overflow-hidden flex flex-col justify-between select-none">
 
-<!-- 隱藏的 video 元件，用來取得影片時長與播放 -->
-<video id="hiddenVideo" preload="metadata" style="display:none;"></video>
+  <!-- 頂部導航欄 (搜尋與控制) -->
+  <header class="w-full bg-gradient-to-b from-black via-black/90 to-transparent p-4 md:p-6 z-10 flex flex-col md:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-3">
+      <div class="bg-red-600 text-white font-extrabold px-3 py-1.5 rounded text-xs tracking-wider animate-pulse flex items-center gap-1.5">
+        <span class="w-2.5 h-2.5 rounded-full bg-white block"></span> PLAYPHRASE MODE
+      </div>
+      <h1 class="text-xl md:text-2xl font-black tracking-tight text-white flex items-center gap-2">
+        台北市議會 <span class="text-yellow-400 bg-yellow-400/10 px-2.5 py-1 rounded border border-yellow-400/20 text-lg md:text-xl">Meme 影音搜尋</span>
+      </h1>
+    </div>
 
-<script src="script.js"></script>
+    <!-- 搜尋框區 -->
+    <div class="relative w-full md:w-96">
+      <div class="absolute inset-y-0 left-0 pl-4 flex items-center pointer-events-none text-slate-400">
+        <i data-lucide="search" class="w-5 h-5"></i>
+      </div>
+      <input 
+        type="text" 
+        id="searchBox" 
+        placeholder="輸入關鍵字（例：龍袍、垃圾、問政、世堅）..." 
+        class="w-full pl-11 pr-10 py-3.5 bg-slate-900/90 hover:bg-slate-900/100 border border-slate-700/80 focus:border-yellow-400 focus:ring-1 focus:ring-yellow-400 rounded-full text-white placeholder-slate-500 text-sm tracking-wide transition-all outline-none shadow-xl shadow-black/50"
+        autocomplete="off"
+        autofocus
+      >
+      <button id="clearSearch" class="absolute inset-y-0 right-0 pr-4 flex items-center text-slate-500 hover:text-white transition-colors">
+        <i data-lucide="x" class="w-4 h-4"></i>
+      </button>
+    </div>
+  </header>
+
+  <!-- 主視覺影音劇院區 -->
+  <main class="flex-1 relative w-full flex items-center justify-center bg-black overflow-hidden px-4">
+    <!-- 背景氛圍模糊霓虹 (提升高級感) -->
+    <div class="absolute inset-0 bg-radial-gradient from-yellow-500/5 via-transparent to-transparent pointer-events-none"></div>
+
+    <!-- 劇院大播放器 -->
+    <div id="playerTheater" class="relative w-full max-w-5xl aspect-video rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 flex items-center justify-center group">
+      
+      <!-- YouTube Iframe 容器 -->
+      <div class="absolute inset-0 video-container pointer-events-none">
+        <div id="ytPlayer" class="w-full h-full scale-[1.01] origin-center"></div>
+      </div>
+
+      <!-- 用於防止滑鼠點選/干擾 YouTube 播放的透明保護層 (也提供觸控手勢偵測) -->
+      <div class="absolute inset-0 bg-transparent z-10 cursor-pointer" id="videoOverlay"></div>
+
+      <!-- 瀏覽器限制自動播放「聲音解鎖」大覆蓋層 -->
+      <div id="unmuteOverlay" class="absolute inset-0 bg-black/90 z-30 flex flex-col items-center justify-center gap-4 transition-all duration-300 opacity-100 cursor-pointer">
+        <div class="w-20 h-20 rounded-full bg-yellow-400 flex items-center justify-center text-black animate-bounce shadow-lg shadow-yellow-400/30">
+          <i data-lucide="volume-x" class="w-10 h-10 stroke-[2.5]"></i>
+        </div>
+        <h3 class="text-xl md:text-2xl font-black text-white">點擊解鎖音效與自動播放</h3>
+        <p class="text-slate-400 text-sm text-center px-6">瀏覽器限制靜音自動播放，點此立刻開啟劇院爆笑模式</p>
+      </div>
+
+      <!-- 讀取載入中動畫 -->
+      <div id="playerLoading" class="absolute inset-0 bg-black/85 z-20 flex flex-col items-center justify-center gap-3 transition-opacity duration-300 opacity-0 pointer-events-none">
+        <div class="w-12 h-12 border-4 border-yellow-400 border-t-transparent rounded-full animate-spin"></div>
+        <span class="text-sm font-medium text-yellow-400 tracking-wider">LOADING MEME...</span>
+      </div>
+
+      <!-- 經典 Netflix 樣式巨幕字幕 (完美同步) -->
+      <div class="absolute bottom-8 left-4 right-4 z-20 pointer-events-none text-center flex flex-col items-center justify-end gap-2">
+        <p id="speakerBadge" class="text-xs md:text-sm font-black tracking-widest text-black bg-yellow-400 px-3 py-1 rounded shadow-md uppercase mb-1">
+          載入中
+        </p>
+        <h2 id="cinemaSubtitle" class="cinema-subtitle text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white leading-relaxed max-w-4xl tracking-wide select-none">
+          「台北市議會經典片段準備中...」
+        </h2>
+        <p id="giftBadge" class="text-xs md:text-sm font-semibold text-cyan-300 drop-shadow-md mt-1 italic">
+          <!-- 呈現送了什麼禮物 -->
+        </p>
+      </div>
+
+      <!-- 左側/右側快速切換按鈕 (滑鼠懸停顯示，且支援手機觸控) -->
+      <button id="prevBtn" class="absolute left-4 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-yellow-400 hover:text-black text-white p-3.5 rounded-full opacity-0 group-hover:opacity-100 transition-all focus:outline-none">
+        <i data-lucide="chevron-left" class="w-6 h-6"></i>
+      </button>
+      <button id="nextBtn" class="absolute right-4 top-1/2 -translate-y-1/2 z-20 bg-black/60 hover:bg-yellow-400 hover:text-black text-white p-3.5 rounded-full opacity-0 group-hover:opacity-100 transition-all focus:outline-none">
+        <i data-lucide="chevron-right" class="w-6 h-6"></i>
+      </button>
+
+      <!-- 播放器底部微型進度條 -->
+      <div class="absolute bottom-0 inset-x-0 h-1.5 bg-slate-800/80 z-20">
+        <div id="progressBar" class="h-full bg-yellow-400 w-0 transition-all duration-100 shadow-[0_0_8px_#facc15]"></div>
+      </div>
+    </div>
+  </main>
+
+  <!-- 底部搜尋清單與播放資訊 (Playphrase 風格) -->
+  <footer class="w-full bg-gradient-to-t from-black via-black/95 to-transparent p-4 md:p-6 z-10 flex flex-col gap-4">
+    <!-- 當前播放項目進度、總量資訊 -->
+    <div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3 border-b border-slate-800/80 pb-3">
+      <div class="flex items-center gap-3">
+        <span class="text-xs text-slate-500 font-mono tracking-wider">PLAYLIST STATUS</span>
+        <div class="flex items-center gap-1">
+          <span id="currentIndexText" class="text-yellow-400 font-bold font-mono">0</span>
+          <span class="text-slate-600">/</span>
+          <span id="totalIndexText" class="text-slate-400 font-mono">0</span>
+        </div>
+        <div class="h-3 w-[1px] bg-slate-800"></div>
+        <span id="currentTitle" class="text-sm font-bold text-slate-300 truncate max-w-xs md:max-w-lg">無符合項目</span>
+      </div>
+
+      <!-- 快速控制組 -->
+      <div class="flex items-center gap-3 w-full sm:w-auto justify-between sm:justify-end">
+        <button id="playPauseBtn" class="flex items-center gap-1.5 text-xs text-slate-300 hover:text-yellow-400 transition-colors">
+          <i data-lucide="pause" class="w-4 h-4" id="playPauseIcon"></i>
+          <span id="playPauseText">暫停</span>
+        </button>
+        <span class="text-slate-800">|</span>
+        <button id="muteToggle" class="flex items-center gap-1.5 text-xs text-slate-300 hover:text-yellow-400 transition-colors">
+          <i data-lucide="volume-2" class="w-4 h-4" id="muteIcon"></i>
+          <span id="muteText">靜音</span>
+        </button>
+        <span class="text-slate-800">|</span>
+        <!-- 自動連播開關 -->
+        <label class="flex items-center gap-2 cursor-pointer">
+          <input type="checkbox" id="autoPlayCheckbox" checked class="sr-only peer">
+          <div class="w-8 h-4 bg-slate-700 rounded-full peer peer-checked:after:translate-x-full after:content-[''] after:absolute after:top-0.5 after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-3 after:w-3 after:transition-all peer-checked:bg-yellow-400 relative"></div>
+          <span class="text-xs text-slate-400 select-none">自動連播</span>
+        </label>
+      </div>
+    </div>
+
+    <!-- 即時匹配短句清單 (水平滑動) -->
+    <div class="w-full">
+      <div id="matchList" class="flex gap-3 overflow-x-auto pb-2 pt-1 scroll-smooth">
+        <!-- 經 JavaScript 動態生成 -->
+      </div>
+    </div>
+
+    <!-- 底部版權與熱鍵說明 -->
+    <div class="flex flex-col md:flex-row items-center justify-between text-[11px] text-slate-600 font-medium tracking-wide gap-2">
+      <p>⚠️ 本系統影音素材為台北市議會公開 VOD 問政訊號，僅作趣味、學術與非商業研究用途。</p>
+      <p class="flex items-center gap-3 text-center md:text-right">
+        <span class="hidden sm:inline">快捷鍵：<b class="text-slate-500">[空白鍵]</b> 播放/暫停 | <b class="text-slate-500">[◀ / ▶]</b> 切換字句 | <b class="text-slate-500">[M]</b> 靜音</span>
+        <span class="text-yellow-500/50 font-bold">Inspired by playphrase.me</span>
+      </p>
+    </div>
+  </footer>
+
+  <script>
+    // 內建經典極限微剪輯資料庫 (精準定位起止秒數)
+    const MEME_DATABASE = [
+      {
+        id: "long-pao-2018",
+        title: "世堅送柯文哲：真命天子黃袍",
+        quote: "我今天特別準備了一套清朝的「黃袍」，送給柯市長過過癮！",
+        speaker: "王世堅",
+        target: "柯文哲",
+        year: 2018,
+        gift: "清朝黃色龍袍一套 👑",
+        ytId: "rKbe3-D_Yxs",
+        start: 78,
+        end: 93,
+        tags: ["王世堅", "柯文哲", "送禮", "龍袍"]
+      },
+      {
+        id: "wooden-horse-2022",
+        title: "世堅送柯文哲：經典道具木馬",
+        quote: "這是我今天特別為你準備的，當作你的畢業禮物，這是一隻「木馬」！",
+        speaker: "王世堅",
+        target: "柯文哲",
+        year: 2022,
+        gift: "木馬 (印有柯文哲頭像) 🐴",
+        ytId: "j6f-m42A5s4",
+        start: 22,
+        end: 35,
+        tags: ["王世堅", "柯文哲", "送禮", "木馬", "畢業禮物"]
+      },
+      {
+        id: "taiwan-independence-2018",
+        title: "世堅：我這輩子最討厭的就是台獨？不，我不是台獨",
+        quote: "我告訴你！我這輩子最討厭的就是「欺騙」！我不是台獨！",
+        speaker: "王世堅",
+        target: "柯文哲",
+        year: 2018,
+        gift: "無",
+        ytId: "9g26K2C1fVs",
+        start: 31,
+        end: 42,
+        tags: ["王世堅", "經典金句", "欺騙", "生氣"]
+      },
+      {
+        id: "rubbish-ko-2015",
+        title: "柯文哲：垃圾不分藍綠",
+        quote: "我告訴慢，請注意聽，這叫做「垃圾不分藍綠」啦！",
+        speaker: "柯文哲",
+        target: "市議員",
+        year: 2015,
+        gift: "無",
+        ytId: "6p6x_D7S840",
+        start: 5,
+        end: 12,
+        tags: ["柯文哲", "經典金句", "垃圾", "藍綠"]
+      },
+      {
+        id: "chiang-book-2023",
+        title: "世堅送蔣萬安：蔣師的禮物",
+        quote: "我今天特別送你這一本「蔣師」語錄，希望你能好好研讀！",
+        speaker: "王世堅",
+        target: "蔣萬安",
+        year: 2023,
+        gift: "蔣介石自傳與歷史書 📚",
+        ytId: "e75lG2Gg4W4",
+        start: 45,
+        end: 58,
+        tags: ["王世堅", "蔣萬安", "送禮", "蔣師"]
+      },
+      {
+        id: "timer-shijian-2020",
+        title: "世堅送柯文哲：倒數計時鐘",
+        quote: "我要送你這台「倒數計時鐘」，提醒你任期只剩下最後兩年！",
+        speaker: "王世堅",
+        target: "柯文哲",
+        year: 2020,
+        gift: "紅色超大倒數計時鐘 ⏰",
+        ytId: "O9-hL3UjT8s",
+        start: 35,
+        end: 49,
+        tags: ["王世堅", "柯文哲", "送禮", "時鐘"]
+      },
+      {
+        id: "shijian-over-my-dead-body",
+        title: "王世堅：經典的 Over my dead body",
+        quote: "我告訴你們，如果要進去，除非 Over my dead body！",
+        speaker: "王世堅",
+        target: "抗議群眾",
+        year: 2014,
+        gift: "無",
+        ytId: "E02_gG1F_E8",
+        start: 3,
+        end: 9,
+        tags: ["王世堅", "經典金句", "英文", "神曲"]
+      },
+      {
+        id: "ko-scratch-head",
+        title: "柯文哲：抓頭無言大笑",
+        quote: "（大笑抓頭）哈哈哈！呃...這個...我們回去再研究啦！",
+        speaker: "柯文哲",
+        target: "市議會",
+        year: 2016,
+        gift: "無",
+        ytId: "Oat86Yp_3zE",
+        start: 42,
+        end: 51,
+        tags: ["柯文哲", "抓頭", "經典金句", "大笑"]
+      }
+    ];
+
+    let player;
+    let filteredPlaylist = [...MEME_DATABASE]; 
+    let currentIndex = 0; 
+    let isMuted = true; // 預設靜音以規避瀏覽器自動播放阻擋
+    let isPlaying = false;
+    let checkTimeInterval; 
+    let currentSearchQuery = "";
+
+    // 觸控手勢變數
+    let touchStartX = 0;
+    let touchEndX = 0;
+
+    // 載入 YouTube Player Iframe API
+    const tag = document.createElement('script');
+    tag.src = "https://www.youtube.com/iframe_api";
+    const firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+    // YouTube Iframe 載入成功回呼
+    function onYouTubeIframeAPIReady() {
+      player = new YT.Player('ytPlayer', {
+        height: '100%',
+        width: '100%',
+        videoId: filteredPlaylist[currentIndex].ytId,
+        playerVars: {
+          'autoplay': 1,
+          'controls': 0, // 隱藏 YouTube 預設控制條，極致極簡
+          'disablekb': 1,
+          'fs': 0,
+          'modestbranding': 1,
+          'rel': 0,
+          'showinfo': 0,
+          'iv_load_policy': 3,
+          'mute': 1 // 先行靜音
+        },
+        events: {
+          'onReady': onPlayerReady,
+          'onStateChange': onPlayerStateChange
+        }
+      });
+    }
+
+    function onPlayerReady(event) {
+      lucide.createIcons();
+      updateSubtitle();
+      updateUIElements();
+      renderMatchList();
+      playCurrentMeme();
+    }
+
+    function onPlayerStateChange(event) {
+      if (event.data == YT.PlayerState.PLAYING) {
+        isPlaying = true;
+        document.getElementById('playerLoading').classList.add('opacity-0');
+        startSegmentTimer();
+        updateUIElements();
+      } else if (event.data == YT.PlayerState.BUFFERING) {
+        document.getElementById('playerLoading').classList.remove('opacity-0');
+      } else {
+        isPlaying = false;
+        clearInterval(checkTimeInterval);
+        updateUIElements();
+      }
+    }
+
+    function startSegmentTimer() {
+      clearInterval(checkTimeInterval);
+      
+      const currentItem = filteredPlaylist[currentIndex];
+      if (!currentItem) return;
+
+      checkTimeInterval = setInterval(() => {
+        if (!player || typeof player.getCurrentTime !== 'function') return;
+
+        const currentTime = player.getCurrentTime();
+        
+        // 算出並更新微進度條
+        const duration = currentItem.end - currentItem.start;
+        const elapsed = currentTime - currentItem.start;
+        const progressPercentage = Math.max(0, Math.min(100, (elapsed / duration) * 100));
+        document.getElementById('progressBar').style.width = `${progressPercentage}%`;
+
+        // 若抵達微剪輯終點
+        if (currentTime >= currentItem.end || currentTime < currentItem.start - 0.5) {
+          clearInterval(checkTimeInterval);
+          handleSegmentEnd();
+        }
+      }, 100);
+    }
+
+    function handleSegmentEnd() {
+      const isAutoPlay = document.getElementById('autoPlayCheckbox').checked;
+      
+      if (isAutoPlay && filteredPlaylist.length > 1) {
+        nextMeme(); // 自動播放下一部符合搜尋條件的影片
+      } else {
+        playCurrentMeme(); // 單一影片循環播放
+      }
+    }
+
+    function playCurrentMeme() {
+      if (!player || typeof player.loadVideoById !== 'function') return;
+
+      const currentItem = filteredPlaylist[currentIndex];
+      if (!currentItem) return;
+
+      document.getElementById('playerLoading').classList.remove('opacity-0');
+      
+      // 精準定位秒數加載
+      player.loadVideoById({
+        videoId: currentItem.ytId,
+        startSeconds: currentItem.start,
+        endSeconds: currentItem.end
+      });
+
+      player.playVideo();
+      
+      if (isMuted) {
+        player.mute();
+      } else {
+        player.unmute();
+      }
+
+      updateSubtitle();
+      updateUIElements();
+      highlightActiveCard();
+    }
+
+    function updateSubtitle() {
+      const currentItem = filteredPlaylist[currentIndex];
+      const subtitleElement = document.getElementById('cinemaSubtitle');
+      const speakerBadge = document.getElementById('speakerBadge');
+      const giftBadge = document.getElementById('giftBadge');
+
+      if (!currentItem) {
+        subtitleElement.innerHTML = "「無符合搜尋之經典名場面」";
+        speakerBadge.innerText = "NONE";
+        giftBadge.innerText = "";
+        return;
+      }
+
+      // 精緻發言人稱號
+      let speakerTitle = currentItem.speaker;
+      if (currentItem.speaker === "王世堅") speakerTitle = "👑 台北送禮大師王世堅";
+      if (currentItem.speaker === "柯文哲") speakerTitle = "抓頭哲學家柯文哲";
+      if (currentItem.speaker === "蔣萬安") speakerTitle = "標準萬安警報蔣萬安";
+      speakerBadge.innerText = `${speakerTitle} [${currentItem.year}年]`;
+
+      if (currentItem.gift && currentItem.gift !== "無") {
+        giftBadge.innerText = `🎁 本次質詢道具：${currentItem.gift}`;
+      } else {
+        giftBadge.innerText = "";
+      }
+
+      // 搜尋關鍵字霓虹發亮處理
+      let rawQuote = currentItem.quote;
+      if (currentSearchQuery.trim() !== "") {
+        const regex = new RegExp(`(${currentSearchQuery})`, 'gi');
+        rawQuote = rawQuote.replace(regex, `<span class="text-yellow-400 underline decoration-yellow-400 underline-offset-8 drop-shadow-[0_0_15px_rgba(250,204,21,0.9)]">$1</span>`);
+      }
+      subtitleElement.innerHTML = `「${rawQuote}」`;
+    }
+
+    function updateUIElements() {
+      const total = filteredPlaylist.length;
+      document.getElementById('currentIndexText').innerText = total > 0 ? currentIndex + 1 : 0;
+      document.getElementById('totalIndexText').innerText = total;
+      
+      const currentItem = filteredPlaylist[currentIndex];
+      document.getElementById('currentTitle').innerText = currentItem 
+        ? `${currentItem.speaker} ➔ ${currentItem.target}：${currentItem.title}`
+        : "無符合項目";
+
+      const playPauseIcon = document.getElementById('playPauseIcon');
+      const playPauseText = document.getElementById('playPauseText');
+      if (isPlaying) {
+        playPauseIcon.setAttribute('data-lucide', 'pause');
+        playPauseText.innerText = "暫停";
+      } else {
+        playPauseIcon.setAttribute('data-lucide', 'play');
+        playPauseText.innerText = "播放";
+      }
+
+      const muteIcon = document.getElementById('muteIcon');
+      const muteText = document.getElementById('muteText');
+      if (isMuted) {
+        muteIcon.setAttribute('data-lucide', 'volume-x');
+        muteText.innerText = "開啟聲音";
+      } else {
+        muteIcon.setAttribute('data-lucide', 'volume-2');
+        muteText.innerText = "靜音中";
+      }
+
+      lucide.createIcons();
+    }
+
+    function nextMeme() {
+      if (filteredPlaylist.length === 0) return;
+      currentIndex = (currentIndex + 1) % filteredPlaylist.length;
+      playCurrentMeme();
+    }
+
+    // 切換前一首
+    function prevMeme() {
+      if (filteredPlaylist.length === 0) return;
+      currentIndex = (currentIndex - 1 + filteredPlaylist.length) % filteredPlaylist.length;
+      playCurrentMeme();
+    }
+
+    // 點擊指定索引播放
+    function jumpToMeme(index) {
+      if (index >= 0 && index < filteredPlaylist.length) {
+        currentIndex = index;
+        playCurrentMeme();
+      }
+    }
+
+    // 模糊搜尋核心邏輯
+    function performSearch(query) {
+      currentSearchQuery = query.trim();
+      
+      if (currentSearchQuery === "") {
+        filteredPlaylist = [...MEME_DATABASE];
+      } else {
+        filteredPlaylist = MEME_DATABASE.filter(item => {
+          return item.quote.toLowerCase().includes(currentSearchQuery.toLowerCase()) ||
+                 item.title.toLowerCase().includes(currentSearchQuery.toLowerCase()) ||
+                 item.speaker.toLowerCase().includes(currentSearchQuery.toLowerCase()) ||
+                 item.tags.some(tag => tag.toLowerCase().includes(currentSearchQuery.toLowerCase()));
+        });
+      }
+
+      currentIndex = 0;
+      renderMatchList();
+      playCurrentMeme();
+    }
+
+    function renderMatchList() {
+      const container = document.getElementById('matchList');
+      container.innerHTML = "";
+
+      if (filteredPlaylist.length === 0) {
+        container.innerHTML = `
+          <div class="py-4 text-center w-full text-slate-500 text-sm">
+            找不到符合「${currentSearchQuery}」的台北市議會爆笑片段
+          </div>
+        `;
+        return;
+      }
+
+      filteredPlaylist.forEach((item, index) => {
+        const isActive = index === currentIndex;
+        const button = document.createElement('button');
+        button.className = `flex-shrink-0 text-left px-5 py-3.5 rounded-xl border transition-all flex flex-col gap-1.5 max-w-sm ${
+          isActive 
+            ? 'bg-yellow-400 text-black border-yellow-400 shadow-lg shadow-yellow-400/20 font-bold scale-102' 
+            : 'bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700 hover:bg-slate-850'
+        }`;
+        button.id = `card-item-${index}`;
+        button.onclick = () => jumpToMeme(index);
+
+        let shortQuote = item.quote;
+        if (shortQuote.length > 22) {
+          shortQuote = shortQuote.substring(0, 20) + "...";
+        }
+
+        if (!isActive && currentSearchQuery !== "") {
+          const regex = new RegExp(`(${currentSearchQuery})`, 'gi');
+          shortQuote = shortQuote.replace(regex, `<span class="text-yellow-400 font-bold">$1</span>`);
+        }
+
+        button.innerHTML = `
+          <div class="flex items-center gap-2 text-[10px] tracking-wider ${isActive ? 'text-black/80' : 'text-slate-500'}">
+            <span class="font-black bg-black/10 px-1.5 py-0.5 rounded">${item.speaker} ➔ ${item.target}</span>
+            <span>${item.year}</span>
+          </div>
+          <p class="text-xs font-semibold leading-relaxed truncate">${shortQuote}</p>
+        `;
+
+        container.appendChild(button);
+      });
+
+      highlightActiveCard();
+    }
+
+    function highlightActiveCard() {
+      filteredPlaylist.forEach((_, index) => {
+        const card = document.getElementById(`card-item-${index}`);
+        if (card) {
+          if (index === currentIndex) {
+            card.className = "flex-shrink-0 text-left px-5 py-3.5 rounded-xl border transition-all flex flex-col gap-1.5 max-w-sm bg-yellow-400 text-black border-yellow-400 shadow-lg shadow-yellow-400/20 font-bold scale-102";
+            card.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
+          } else {
+            card.className = "flex-shrink-0 text-left px-5 py-3.5 rounded-xl border transition-all flex flex-col gap-1.5 max-w-sm bg-slate-900 text-slate-300 border-slate-800 hover:border-slate-700 hover:bg-slate-850";
+          }
+        }
+      });
+    }
+
+    // 解鎖網頁自動播放的音效覆蓋層
+    document.getElementById('unmuteOverlay').onclick = function() {
+      isMuted = false;
+      if (player && typeof player.unmute === 'function') {
+        player.unmute();
+        player.setVolume(100);
+      }
+      this.classList.add('opacity-0');
+      setTimeout(() => this.style.display = 'none', 300);
+      playCurrentMeme();
+    };
+
+    // 即時輸入篩選
+    document.getElementById('searchBox').oninput = function(e) {
+      performSearch(e.target.value);
+    };
+
+    document.getElementById('clearSearch').onclick = function() {
+      document.getElementById('searchBox').value = "";
+      performSearch("");
+      document.getElementById('searchBox').focus();
+    };
+
+    document.getElementById('prevBtn').onclick = prevMeme;
+    document.getElementById('nextBtn').onclick = nextMeme;
+
+    document.getElementById('playPauseBtn').onclick = function() {
+      if (!player) return;
+      if (isPlaying) {
+        player.pauseVideo();
+      } else {
+        player.playVideo();
+      }
+    };
+
+    document.getElementById('muteToggle').onclick = toggleMute;
+
+    function toggleMute() {
+      if (!player) return;
+      if (isMuted) {
+        player.unmute();
+        isMuted = false;
+      } else {
+        player.mute();
+        isMuted = true;
+      }
+      updateUIElements();
+    }
+
+    // 點擊主播放器畫面即可播放與暫停
+    document.getElementById('videoOverlay').onclick = function() {
+      if (!player) return;
+      if (isPlaying) {
+        player.pauseVideo();
+      } else {
+        player.playVideo();
+      }
+    };
+
+    // 支援手機平板左右滑動（Swipe）手勢切換前後片段
+    const overlay = document.getElementById('videoOverlay');
+    overlay.addEventListener('touchstart', (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, { passive: true });
+
+    overlay.addEventListener('touchend', (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      handleSwipeGesture();
+    }, { passive: true });
+
+    function handleSwipeGesture() {
+      const diffX = touchEndX - touchStartX;
+      if (diffX > 60) {
+        // 向右滑動 -> 播放前一個
+        prevMeme();
+      } else if (diffX < -60) {
+        // 向左滑動 -> 播放下一個
+        nextMeme();
+      }
+    }
+
+    window.onkeydown = function(e) {
+      if (document.activeElement.tagName === 'INPUT') {
+        if (e.key === 'Escape') {
+          document.activeElement.blur();
+        }
+        return;
+      }
+
+      if (e.key === ' ') { 
+        e.preventDefault();
+        document.getElementById('playPauseBtn').click();
+      } else if (e.key === 'ArrowLeft') { 
+        e.preventDefault();
+        prevMeme();
+      } else if (e.key === 'ArrowRight') { 
+        e.preventDefault();
+        nextMeme();
+      } else if (e.key === 'm' || e.key === 'M') { 
+        e.preventDefault();
+        toggleMute();
+      }
+    };
+  </script>
 </body>
 </html>
