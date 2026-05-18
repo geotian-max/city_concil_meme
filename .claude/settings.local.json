@@ -152,7 +152,8 @@
       "PowerShell(& python \"$env:USERPROFILE\\\\.claude\\\\skills\\\\watch-video\\\\scripts\\\\watch.py\" \"https://youtu.be/7ib2ab_kDLI?si=19OMMCfoIwpQr0Ep\" --out-dir \"./watch_video_work\")",
       "PowerShell(Set-Content *)",
       "PowerShell(Remove-Item *)",
-      "PowerShell(ffprobe *)"
+      "PowerShell(ffprobe *)",
+      "Bash(gh repo *)"
     ]
   }
 }
