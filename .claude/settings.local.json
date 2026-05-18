@@ -159,7 +159,11 @@
       "PowerShell(python server.py)",
       "PowerShell(Invoke-WebRequest -Uri http://127.0.0.1:5000 -UseBasicParsing)",
       "PowerShell(Invoke-WebRequest -Uri \"http://127.0.0.1:5000/search?q=%E6%88%91%E4%B8%8D%E6%98%AF%E5%8F%B0%E7%8D%A8\" -UseBasicParsing)",
-      "PowerShell(sqlite3 *)"
+      "PowerShell(sqlite3 *)",
+      "PowerShell([Environment]::SetEnvironmentVariable\\(\"PATH\", \"$env:PATH;C:\\\\Users\\\\geoti\\\\.deno\\\\bin\", \"User\"\\))",
+      "PowerShell(Invoke-WebRequest -Uri \"https://geotian-max.github.io/city_concil_meme/\" -UseBasicParsing | Select-Object -ExpandProperty Content)",
+      "PowerShell(echo \"https://www.youtube.com/watch?v=IZflKWRMhNI\" > youtube_url.txt)",
+      "PowerShell(echo \"https://www.youtube.com/watch?v=ENXhEMk0504\" > youtube_url.txt)"
     ]
   }
 }
