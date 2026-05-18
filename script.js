@@ -1,14 +1,14 @@
-const searchBox = document.getElementById('searchBox');
+﻿const searchBox = document.getElementById('searchBox');
 const resultsDiv = document.getElementById('results');
 const hiddenVideo = document.getElementById('hiddenVideo');
 
 function ytEmbedUrl(vid, start){
-    // If vid looks like a YouTube ID (11 chars alnum/-/_)
+    // 如果vid看起来像YouTube ID（11位字母数字/-/_）
     if (/^[A-Za-z0-9_-]{11}$/.test(vid)){
         return `https://www.youtube.com/embed/${vid}?start=${Math.floor(start)}&autoplay=1`;
     }
-    // Otherwise treat as local file (e.g., transcripts/xxx.vtt corresponds to video file)
-    // Assuming you have mp4 files in videos/ with same name
+    // 否则作为本地文件处理（例如：transcripts/xxx.vtt对应视频文件）
+    // 假设您有与名称相同的mp4文件在videos/目录中
     return `videos/${vid}.mp4#t=${start}`;
 }
 
@@ -21,16 +21,16 @@ async function doSearch(){
         resultsDiv.innerHTML = '<p>找不到相符片段。</p>';
         return;
     }
-    // Build results
+    // 构建结果
     resultsDiv.innerHTML = await Promise.all(data.map(async r=>{
         const vid = r.vid;
         const start = r.start_time;
         const end   = r.end_time;
-        // Determine thumbnail
+        // 确定缩略图
         const thumbUrl = /^[A-Za-z0-9_-]{11}$/.test(vid)
             ? `https://img.youtube.com/vi/${vid}/hqdefault.jpg`
             : `thumbnails/${vid}.jpg`;
-        // Load video metadata to get duration
+        // 加载视频元数据以获取时长
         hiddenVideo.src = ytEmbedUrl(vid, start);
         await new Promise(res=>{ hiddenVideo.onloadedmetadata =()=>res(); });
         const duration = hiddenVideo.duration;
@@ -45,18 +45,22 @@ async function doSearch(){
                         ${new Date(clipStart*1000).toISOString().substr(11,8)} –
                         ${new Date(clipEnd*1000).toISOString().substr(11,8)}
                     </div>
-                    <button class="play-btn">播放片段</button>
                 </div>
             </div>
         `;
     })).join('');
-    // Attach play button handlers
-    document.querySelectorAll('.result-item .play-btn').forEach(btn=>{
-        btn.addEventListener('click', e=>{
-            const item = e.target.closest('.result-item');
-            const vid   = item.dataset.vid;
+
+    // 为结果项附加点击处理程序以进行播放
+    const resultItems = resultsDiv.querySelectorAll('.result-item');
+    resultItems.forEach(item => {
+        item.addEventListener('click', () => {
+            // 移除任何现有的视频播放器
+            document.querySelectorAll('.result-item video').forEach(v => v.remove());
+
+            const vid = item.dataset.vid;
             const start = parseFloat(item.dataset.start);
-            const end   = parseFloat(item.dataset.end);
+            const end = parseFloat(item.dataset.end);
+
             const v = document.createElement('video');
             v.controls = true;
             v.src = ytEmbedUrl(vid, start);
@@ -66,13 +70,15 @@ async function doSearch(){
                     v.pause();
                 }
             });
-            const playerDiv = document.createElement('div');
-            playerDiv.style.marginTop='0.5rem';
-            playerDiv.appendChild(v);
-            item.appendChild(playerDiv);
+            item.appendChild(v);
             v.play();
         });
     });
+
+    // 自动播放第一个结果
+    if (resultItems.length > 0) {
+        resultItems[0].click();
+    }
 }
 
 let timeoutId;
